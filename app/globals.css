@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-header: var(--font-poppins);
+  --font-heading: var(--font-montserrat);
+  --font-body: var(--font-roboto);
+  --font-alt: var(--font-mulish);
+}
+
+.poppins{
+  font-family: var(--font-header), sans-serif !important;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+}
+
+p, span, li, a {
+  font-family: var(--font-body), sans-serif;
+}
+
+button {
+  font-family: var(--font-heading), sans-serif !important;
+  
+}
+
+
+.loader {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#da000a 94%,#da000a) top/8px 8px no-repeat,
+    conic-gradient(#ec4c4c00 30%,#fa1313);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+  100%{transform: rotate(1turn)}
+}
+
+
+.favicon{
+  width: auto;
+  height: 50px;
+  position: absolute;
+
+}
+
+
+
+.loaderwords {
+  position: absolute;
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  top: 57%;
+  clip-path: inset(0 100% 0 0);
+  animation: l5 2s steps(11) infinite;
+  color:#da000a;
+}
+.loaderwords:before {
+  content:"Loading..."
+}
+@keyframes l5 {to{clip-path: inset(0 -1ch 0 0)}}
+
+.navitem{
+  font-size: 15px ;
+  letter-spacing: 1px;
+  border-left: 1px solid #d1d5dc;
+  height: 100%;
+  padding: 16px 15px;
+  position: relative;
+}
+
+.navitem::after{
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  height: 3px ;
+  width: 100%;
+  left: 0px;
+}
+
+@keyframes marquee {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 1s linear infinite;
+}
+
+
+.navitem-top{
+    font-size: 15px ;
+  letter-spacing: 1px;
+  border-left: 1px solid #d1d5dc;
+  height: 100%;
+  padding: 10px 15px;
+  position: relative;
+}
+
