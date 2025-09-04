@@ -26,7 +26,6 @@ export default function ServicesSection() {
         "Employer Nomination Visa",
         "Visit/ Tourist Visa",
       ],
-      color: "bg-gradient-to-br from-gray-700 to-gray-500",
     },
     {
       title: "Canada",
@@ -40,20 +39,18 @@ export default function ServicesSection() {
         "Job  Visa",
         "Visit/ Tourist Visa",
       ],
-      color: "bg-gradient-to-br from-gray-700 to-gray-500",
     },
     {
       title: "USA",
       img: usa,
       points: [
-        "  Green Card",
+        "Green Card",
         "Study Visa",
         "Work Permit",
         "Spouse/Family Visas",
         "Business & Investor Visas",
         "Visit/ Tourist Visa",
       ],
-      color: "bg-gradient-to-br from-gray-700 to-gray-500",
     },
     {
       title: "UK",
@@ -67,7 +64,6 @@ export default function ServicesSection() {
         "Job Seeker Visa",
         "Visit/ Tourist Visa",
       ],
-      color: "bg-gradient-to-br from-gray-700 to-gray-500",
     },
     {
       title: "New Zealand",
@@ -81,7 +77,6 @@ export default function ServicesSection() {
         "Job Seeker Visa",
         "Visit/ Tourist Visa",
       ],
-      color: "bg-gradient-to-br from-gray-700 to-gray-500",
     },
     {
       title: "Europe",
@@ -95,86 +90,39 @@ export default function ServicesSection() {
         "Job Seeker Visa",
         "Visit/ Tourist Visa",
       ],
-      color: "bg-gradient-to-br from-gray-700 to-gray-500",
     },
-    // {
-    //   title: "New Zealand",
-    //   img: newzealend,
-    //   points: [
-    //     "PR Visa",
-    //     "Study Visas",
-    //     "Student Visa",
-    //     "Express Entry Program",
-    //     "PNP",
-    //     "Business Visa",
-    //     "Visit Visa",
-    //     "Digital Nomad Visa",
-    //   ],
-    //   color: "bg-gradient-to-br from-gray-700 to-gray-500",
-    // },
-    // {
-    //   title: "United Kingdom",
-    //   img: unitedkingdom,
-    //   points: [
-    //     "PR Visa",
-    //     "Study Visas",
-    //     "Student Visa",
-    //     "Express Entry Program",
-    //     "PNP",
-    //     "Business Visa",
-    //     "Visit Visa",
-    //     "Digital Nomad Visa",
-    //   ],
-    //   color: "bg-gradient-to-br from-gray-700 to-gray-500",
-    // },
-
-    // {
-    //   title: "Portugal",
-    //   img:portugal,
-    //   points: [
-    //     "PR Visa",
-    //     "Study Visas",
-    //     "Student Visa",
-    //     "Express Entry Program",
-    //     "PNP",
-    //     "Business Visa",
-    //     "Visit Visa",
-    //     "Digital Nomad Visa",
-    //   ],
-    //   color: "bg-gradient-to-br from-gray-700 to-gray-500",
-    // },
   ];
 
   const [firstFlipped, setFirstFlipped] = useState(true);
 
   return (
-    <section className="w-full bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto ">
-        <div className="grid lg:grid-cols-6 gap-10 items-start">
+    <section className="w-full bg-gray-50 py-12 sm:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-6 gap-12 items-start">
           {/* Left Content */}
-          <div className="lg:col-span-2 space-y-8  md:sticky top-30">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+          <div className="lg:col-span-2 space-y-6 md:space-y-8 sticky top-24">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
               What can we do for you today?
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
               Choose a service to explore how we can help you study, migrate,
               work, visit, or even get citizenship. Our team ensures you get
               personalized guidance at every step.
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-[#da010b] text-white font-semibold  shadow-md hover:bg-red-600 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <button className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#da010b] text-white font-semibold rounded-md shadow-md hover:bg-red-600 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               Get Free Counselling
             </button>
           </div>
 
           {/* Right Cards */}
           <div className="lg:col-span-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               {services.map((service, index) => {
                 const isFirst = index === 0;
                 return (
                   <div
                     key={index}
-                    className="group w-full h-80 cursor-pointer"
+                    className="group w-full h-72 sm:h-80 md:h-96 cursor-pointer"
                     style={{ perspective: "1000px" }}
                     onMouseEnter={() => {
                       if (isFirst) setFirstFlipped(false);
@@ -190,46 +138,41 @@ export default function ServicesSection() {
                       }`}
                       style={{ transformStyle: "preserve-3d" }}
                     >
+                      {/* Front */}
                       <div
-                        className="absolute inset-0 w-full h-full  overflow-hidden shadow-lg"
+                        className="absolute inset-0 w-full h-full overflow-hidden shadow-lg rounded-lg"
                         style={{ backfaceVisibility: "hidden" }}
                       >
-                        {/* <div
-                          className="absolute inset-0 bg-fit bg-center scale-105 group-hover:scale-110 transition-transform duration-500"
-                          style={{ backgroundImage: `url(${service.img})` }}
-                        /> */}
                         <Image
                           src={service.img}
-                          width={300}
-                          height={500}
+                          fill
                           alt={service.title}
-                          className="absolute inset-0 h-[100%] bg-fit bg-center scale-105 group-hover:scale-110 transition-transform duration-500"
+                          className="object-cover scale-105 group-hover:scale-110 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20 rounded-lg" />
                         <div className="absolute inset-0 flex items-center justify-center">
-                          <h3 className="text-3xl font-bold text-white text-center drop-shadow-lg px-4">
+                          <h3 className="text-2xl sm:text-3xl font-bold text-white text-center drop-shadow-lg px-2">
                             {service.title}
                           </h3>
                         </div>
                       </div>
+
+                      {/* Back */}
                       <div
-                        className={`absolute inset-0 w-full overflow-y-auto h-full shadow-xl flex flex-col justify-center  pt-6 pl-4 text-gray-500 rotate-y-180`}
+                        className="absolute inset-0 w-full h-full shadow-xl flex flex-col justify-start p-4 sm:p-6 bg-white rounded-lg overflow-y-auto rotate-y-180"
                         style={{ backfaceVisibility: "hidden" }}
                       >
-                        <h3 className="text-2xl font-bold mb-6 mt-3 drop-shadow-md">
+                        <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-800">
                           {service.title}
                         </h3>
-
-                        <div className="w-full ">
+                        <div className="w-full space-y-2 sm:space-y-3">
                           {service.points.map((point, idx) => (
                             <div
                               key={idx}
-                              className="mb-3 flex items-center group cursor-pointer"
+                              className="flex items-center group cursor-pointer"
                             >
-                              <div className="w-2.5 h-2.5 bg-white rounded-full mr-3 flex-shrink-0 shadow-sm"></div>
-                              <span
-                                className={`relative text-sm font-medium tracking-wide transition-colors duration-300 group-hover:text-gray-500`}
-                              >
+                              <div className="w-2 h-2 bg-[#da010b] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
+                              <span className="text-sm sm:text-base font-medium text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
                                 {point}
                               </span>
                             </div>

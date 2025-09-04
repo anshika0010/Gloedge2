@@ -13,8 +13,6 @@ import { useLocale } from "next-intl";
 const TestimonialSection = () => {
   const language = useLocale();
   const swiperRef = useRef(null);
-
-  // Local state for Read More toggle
   const [expandedId, setExpandedId] = useState(null);
 
   const testimonials = [
@@ -50,14 +48,13 @@ const TestimonialSection = () => {
     },
   ];
 
-  // Toggle Read More/Less + control autoplay
   const handleToggle = (id) => {
     if (expandedId === id) {
       setExpandedId(null);
-      swiperRef.current?.autoplay?.start(); // Resume autoplay
+      swiperRef.current?.autoplay?.start();
     } else {
       setExpandedId(id);
-      swiperRef.current?.autoplay?.stop(); // Stop autoplay
+      swiperRef.current?.autoplay?.stop();
     }
   };
 
@@ -88,12 +85,11 @@ const TestimonialSection = () => {
         </div>
 
         {/* Testimonials Slider */}
-        <div className="container mx-auto px-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-10">
           <div className="relative">
             <Swiper
               modules={[Navigation, Autoplay]}
               spaceBetween={30}
-              slidesPerView={3}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -107,6 +103,12 @@ const TestimonialSection = () => {
               }}
               speed={800}
               loop={true}
+              breakpoints={{
+                0: { slidesPerView: 1 }, // mobile
+                640: { slidesPerView: 1 }, // sm
+                768: { slidesPerView: 2 }, // md
+                1024: { slidesPerView: 3 }, // lg+
+              }}
             >
               {testimonials.map((testimonial) => (
                 <SwiperSlide
@@ -133,7 +135,6 @@ const TestimonialSection = () => {
                       </p>
                     </div>
 
-                    {/* Show 3 lines by default, expand if read more clicked */}
                     <p
                       className={`text-gray-600 leading-relaxed ${
                         expandedId === testimonial.id ? "" : "line-clamp-2"
