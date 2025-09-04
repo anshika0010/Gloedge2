@@ -256,7 +256,7 @@ const FAQInquirySection = () => {
           {/* Right Side - FAQs */}
           <div className="space-y-6">
             <h3 className="text-4xl font-bold text-gray-900 mb-6 py-6">
-              Frequently Asked
+              Frequently Asked Questions
             </h3>
 
             <div className="space-y-4">
