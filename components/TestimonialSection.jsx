@@ -93,7 +93,7 @@ const TestimonialSection = () => {
             <Swiper
               modules={[Navigation, Autoplay]}
               spaceBetween={30}
-              slidesPerView={2}
+              slidesPerView={3}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -136,7 +136,7 @@ const TestimonialSection = () => {
                     {/* Show 3 lines by default, expand if read more clicked */}
                     <p
                       className={`text-gray-600 leading-relaxed ${
-                        expandedId === testimonial.id ? "" : "line-clamp-3"
+                        expandedId === testimonial.id ? "" : "line-clamp-2"
                       }`}
                     >
                       {testimonial.description}
