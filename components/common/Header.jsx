@@ -3,16 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
-import { IoIosSearch } from "react-icons/io";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useRouter } from "next/navigation";
-import { MdCall } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import LocaleSwitcher from "./LanguageSwitcher";
 import { IoNotifications } from "react-icons/io5";
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -44,15 +41,12 @@ const navLink = [
     link: "visa",
     color: "after:bg-[#f55f3e] hover:bg-[#f55f3e] hover:text-white",
   },
-  // {name:"Citizenship",link:"invest",color:"after:bg-green-500 hover:bg-green-500 hover:text-white"},
   {
     name: "Language Training",
     link: "language-training",
     color: "after:bg-blue-700 hover:bg-blue-700 hover:text-white",
   },
 ];
-// {name:"Affiliate",link:"#",color:"after:bg-blue-800 hover:bg-blue-800 hover:text-white"},
-// {name:"Blogs",link:"/blogs",color:"after:bg-gray-200 hover:bg-gray-200 hover:text-gray-600"},
 
 export default function Navbar({}) {
   const language = useLocale();
@@ -65,6 +59,7 @@ export default function Navbar({}) {
   const [isAtTop, setIsAtTop] = useState(true);
   const dropdownRef = useRef(null);
   const router = useRouter();
+
   const toggleDropdown = () => {
     setToggleMenu(!togglemenu);
   };
@@ -109,54 +104,55 @@ export default function Navbar({}) {
         }`}
       >
         <div className="Info-section border-b border-gray-300">
-          {/* 🔴 Top Notification Bar */}
+          {/* Top notification banner */}
           <div className="border-b border-gray-300 bg-gray-200">
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-3 px-4 py-2">
-              {/* Left: Notifications */}
-              <div className="flex items-center gap-2 w-full md:w-auto">
-                <div className="p-2 bg-[#da010b] rounded-full text-white">
-                  <IoNotifications />
+            <div className="container mx-auto items-center flex justify-between px-2 sm:px-4">
+              <div className="flex items-center gap-1 sm:gap-2 flex-1 min-w-0">
+                <div className="p-1.5 sm:p-2 bg-[#da010b] rounded-full text-white flex-shrink-0">
+                  <IoNotifications className="text-sm sm:text-base" />
                 </div>
-                <span className="font-semibold text-sm md:text-base">
+                <span className="py-2 sm:py-4 font-semibold text-xs sm:text-sm lg:text-base flex-shrink-0">
                   Important Updates
                 </span>
-
-                {/* Vertical Swiper (auto slides) */}
-                <div className="border-l border-gray-300 pl-4 flex-1 md:flex-none">
+                <div className="border-l border-gray-300 pl-2 sm:pl-4 flex-1 min-w-0">
                   <Swiper
                     direction="vertical"
                     spaceBetween={30}
                     slidesPerView={1}
-                    autoplay={{ delay: 2000, disableOnInteraction: false }}
+                    autoplay={{
+                      delay: 2000,
+                      disableOnInteraction: false,
+                    }}
                     modules={[Autoplay]}
-                    style={{ height: "45px" }}
+                    style={{ height: "40px" }}
+                    className="sm:h-[55px]"
                   >
                     <SwiperSlide>
                       <div className="h-full flex flex-col justify-center">
-                        <h1 className="font-semibold text-xs md:text-sm">
-                          August 23, 2025 | Kazakhstan
+                        <h1 className="font-semibold text-xs sm:text-sm truncate">
+                          August 23,2025 | Kazakhstan
                         </h1>
-                        <p className="text-[10px] md:text-xs">
+                        <p className="text-xs hidden sm:block">
                           Kazakhstan : Investor visa Introduced
                         </p>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="h-full flex flex-col justify-center">
-                        <h1 className="font-semibold text-xs md:text-sm">
-                          August 23, 2025 | Kazakhstan
+                        <h1 className="font-semibold text-xs sm:text-sm truncate">
+                          August 23,2025 | Kazakhstan
                         </h1>
-                        <p className="text-[10px] md:text-xs">
+                        <p className="text-xs hidden sm:block">
                           Kazakhstan : Investor visa Introduced
                         </p>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="h-full flex flex-col justify-center">
-                        <h1 className="font-semibold text-xs md:text-sm">
-                          August 23, 2025 | Kazakhstan
+                        <h1 className="font-semibold text-xs sm:text-sm truncate">
+                          August 23,2025 | Kazakhstan
                         </h1>
-                        <p className="text-[10px] md:text-xs">
+                        <p className="text-xs hidden sm:block">
                           Kazakhstan : Investor visa Introduced
                         </p>
                       </div>
@@ -164,80 +160,98 @@ export default function Navbar({}) {
                   </Swiper>
                 </div>
               </div>
-
-              {/* Right: Button */}
-              <div className="w-full md:w-auto flex justify-center md:justify-end">
-                <button className="bg-[#da010b] text-white font-semibold py-2 px-4 rounded-sm shadow-md hover:shadow-xl transition-all duration-300 text-sm md:text-base">
+              <div className="flex-shrink-0">
+                <button className="bg-[#da010b] text-white font-semibold py-1.5 px-2 sm:py-2 sm:px-4 rounded-sm shadow-md hover:shadow-xl transition-all duration-300 text-xs sm:text-sm">
                   Watch Now
                 </button>
               </div>
             </div>
           </div>
 
-          {/* 🔵 Contact / Links Bar */}
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-3 px-4 py-2">
-            {/* Left (optional email hidden for now) */}
-            <div className="hidden md:block">{/* Placeholder */}</div>
-
-            {/* Right */}
-            <div className="flex flex-wrap items-center justify-center md:justify-end gap-2 md:gap-4 text-sm md:text-base">
-              <p className="flex items-center gap-1 font-semibold text-gray-500">
-                <MdOutlineMailOutline /> www.gloedgevisas.com
-              </p>
-              <p className="flex items-center gap-1 font-semibold text-gray-500">
-                <FaWhatsapp style={{ color: "var(--color-green-700)" }} /> +91
-                8878-8878-41
-              </p>
-              <Link
-                href={`/${language}/affiliate`}
-                className="hover:bg-[#494E3C] hover:text-white text-gray-600 font-semibold px-2 py-1 rounded transition text-sm"
-              >
-                Affiliate
-              </Link>
-              <Link
-                href={`/${language}/blogs`}
-                className="hover:bg-[#e72727] hover:text-white text-gray-600 font-semibold px-2 py-1 rounded transition text-sm"
-              >
-                Blogs
-              </Link>
-              <div>
-                <LocaleSwitcher />
+          {/* Contact info and links section */}
+          <div className="container mx-auto px-2 sm:px-4 md:px-0">
+            <div className="flex items-center justify-between py-1 sm:py-2">
+              <div className="hidden lg:block">
+                {/* Placeholder for left side content */}
               </div>
-              <button className="hover:bg-[#da010b] hover:text-white text-gray-600 font-semibold px-2 py-1 rounded transition text-sm">
-                Pay Now
-              </button>
+
+              <div className="flex items-center gap-1 sm:gap-2 md:gap-4 text-xs sm:text-sm overflow-x-auto">
+                {/* Contact info - responsive visibility */}
+                <p className="flex gap-1 items-center font-semibold text-gray-500 whitespace-nowrap">
+                  <MdOutlineMailOutline className="text-sm sm:text-base" />
+                  <span className="hidden sm:inline">www.gloedgevisas.com</span>
+                  <span className="sm:hidden">Contact</span>
+                </p>
+
+                <p className="flex gap-1 items-center font-semibold text-gray-500 whitespace-nowrap">
+                  <FaWhatsapp
+                    style={{ color: "var(--color-green-700)" }}
+                    className="text-sm sm:text-base"
+                  />
+                  <span className="hidden md:inline">+91 8878-8878-41</span>
+                  <span className="md:hidden">+91 8878</span>
+                </p>
+
+                {/* Navigation links - responsive */}
+                <Link
+                  href={`/${language}/affiliate`}
+                  className="hover:bg-[#494E3C] hover:text-white text-gray-600 font-semibold navitem-top relative px-2 py-1 text-xs sm:text-sm whitespace-nowrap"
+                >
+                  Affiliate
+                </Link>
+
+                <Link
+                  href={`/${language}/blogs`}
+                  className="hover:bg-[#e72727] hover:text-white text-gray-600 font-semibold navitem-top relative border-r border-gray-300 px-2 py-1 text-xs sm:text-sm whitespace-nowrap"
+                >
+                  Blogs
+                </Link>
+
+                <div className="flex-shrink-0">
+                  <LocaleSwitcher />
+                </div>
+
+                <div className="flex-shrink-0">
+                  <button className="hover:bg-[#da010b] hover:text-white text-gray-600 font-semibold navitem-top relative border-r border-gray-300 px-2 py-1 text-xs sm:text-sm whitespace-nowrap">
+                    Pay Now
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="container mx-auto px-4 md:px-0">
-          <div className="flex justify-between items-center h-14">
-            {/* Logo */}
-            <Link href="/" className="relative">
+        {/* Main navigation */}
+        <div className="container mx-auto px-2 sm:px-4 md:px-0">
+          <div className="flex justify-between items-center h-12 sm:h-14 lg:h-16">
+            {/* Logo - responsive sizing */}
+            <Link href="/" className="relative flex-shrink-0">
               <Image
                 src={"/logo1 (2).png"}
                 alt="logo"
                 width={500}
                 height={500}
-                className="w-auto h-[40px] md:h-[55px] "
+                className="w-auto h-[30px] sm:h-[40px] md:h-[45px] lg:h-[55px]"
               />
             </Link>
-            <div className="flex gap-4 md:hidden">
+
+            {/* Mobile menu button and cart */}
+            <div className="flex gap-0 sm:gap-2 md:hidden">
               <Link
                 href="/cart"
-                className="text-gray-600 p-2 hover:bg-gray-100 rounded-full relative"
+                className="text-gray-600 p-1.5 sm:p-2 hover:bg-gray-100 rounded-full relative"
               >
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 bg-red-500 text-white text-xs rounded-full w-3 h-3 sm:w-4 sm:h-4 flex items-center justify-center text-[10px] sm:text-xs">
                   0
                 </span>
-                <RiShoppingCartLine className="text-xl" />
+                <RiShoppingCartLine className="text-lg sm:text-xl" />
               </Link>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-600"
+                className="text-gray-600 p-1"
               >
                 <svg
-                  className="h-6 w-6"
+                  className="h-5 w-5 sm:h-6 sm:w-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -252,163 +266,68 @@ export default function Navbar({}) {
               </button>
             </div>
 
-            <div className="hidden md:flex items-center " ref={dropdownRef}>
-              {navLink.map((item, index) => {
-                return (
-                  <Link
-                    key={index}
-                    href={`/${language}/${item?.link}`}
-                    className={`
-                      ${item.color}
-                      nav-link  text-gray-600 font-semibold navitem  relative ${
-                        navLink.length - 1 === index
-                          ? "border-r border-gray-300"
-                          : ""
-                      }`}
-                  >
-                    {item?.name}
-                  </Link>
-                );
-              })}
-
-              {/* <div className="relative group">
-                <div className="flex items-center space-x-1 cursor-pointer">
-                  <span className="nav-link text-gray-600 font-semibold navitem" >About</span>
-                  <MdKeyboardArrowDown />
-                </div>
-                <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow-md rounded  py-2 w-48 z-50">
-                  <Link
-                    href="/about-us"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    SKilled
-                  </Link>
-                  <Link
-                    href="/about-us/team"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Our Author
-                  </Link>
-                  <Link
-                    href="/about-us/team"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Our Editor
-                  </Link>
-                  <Link
-                    href="/about-us/team"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Our Reviewer
-                  </Link>
-                </div>
+            {/* Desktop navigation - enhanced responsive design */}
+            <div className="hidden md:flex items-center" ref={dropdownRef}>
+              <div className="flex items-center ">
+                {navLink.map((item, index) => {
+                  return (
+                    <Link
+                      key={index}
+                      href={`/${language}/${item?.link}`}
+                      className={`
+                        ${item.color}
+                        nav-link text-gray-600 font-semibold navitem relative px-2 lg:px-3 xl:px-4 py-2 text-sm lg:text-base whitespace-nowrap ${
+                          navLink.length - 1 === index
+                            ? "border-r border-gray-300"
+                            : ""
+                        }`}
+                    >
+                      <span className="lg:hidden xl:inline">{item?.name}</span>
+                      <span className="hidden lg:inline xl:hidden">
+                        {item?.name.split(" ")[0]}
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
-
-              
-              <div className="relative group">
-                <div className="flex items-center space-x-1 cursor-pointer">
-                  <Link href={"/journals"} className="nav-link text-gray-600 font-semibold navitem" >
-                    Journals
-                  </Link>
-                  <MdKeyboardArrowDown />
-                </div>
-                <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow-md rounded  py-2 w-48 z-50">
-                  
-                <Link
-                   href={`/journal/ok`}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    journal?.name
-                  </Link>
-                  
-                </div>
-              </div>
-              <div className="relative group">
-                <div className="flex items-center space-x-1 cursor-pointer">
-                  <Link href={"/books"} className="nav-link text-gray-600 font-semibold navitem" >
-                    Books
-                  </Link>
-                  <MdKeyboardArrowDown />
-                </div>
-                <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow-md rounded  py-2 w-48 z-50">
-                  
-                 <Link
-                   href={`/books?category=`}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    items?.name
-                  </Link>
-                  
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
 
-        {/* <div
-     className={`fixed top-0 z-[-1] left-0 w-full h-[110vh] bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out z-40 ${
-       opensearch ? "opacity-60 visible" : "opacity-0 invisible"
-     }`}
-     onClick={()=>setOpenSearch(!opensearch)}
-   ></div>
-    <div
-        className={`fixed flex flex-col justify-center items-center z-2 top-0 w-full h-[100vh] shadow-lg transition-all duration-300 ease-in-out ${
-          opensearch ? 'left-[-0%]' : 'left-[-100%]'
-        }`}
-      >
-        <div
-        onClick={()=>setOpenSearch(false)} className="max-w-[400px] min-w-[300px] flex justify-end text-gray-200 text-3xl md:text-4xl cursor-pointer">
-          <IoCloseSharp/>
-        </div>
-        <div className="bg-white max-w-[400px] min-w-[300px] rounded-lg p-4">
-        <div>
-          <div className="input flex border border-gray-300 justify-between items-center rounded-full w-full">
-          <input 
-          className="px-3 w-full focus:outline-none"
-          placeholder="search..."/>
-          <div className="p-2">
-            <IoIosSearch className="text-2xl"/>
-          </div>
-          </div>
-          <div className="flex items-center justify-between text-gray-500">
-            <div className="flex items-center gap-2 py-3"><span>Filter </span><RiFilter2Line/></div>
-            <div className="text-xl">
-                <RiArrowDownSLine/>
-            </div>
-          </div>
-          <div>
-            <button className="flex justify-center gap-4 bg-blue-800 text-white font-medium py-3 px-8 rounded-full w-full hover:bg-blue-900 transition">Search</button>
-          </div>
-        </div>
-        </div>
-      </div> */}
+        {/* Mobile sidebar overlay */}
         <div
           className={`fixed top-0 z-[-1] left-0 w-full h-[110vh] bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out z-40 ${
             isOpen ? "opacity-60 visible" : "opacity-0 invisible"
           }`}
           onClick={toggleMenuHandler}
         ></div>
+
+        {/* Mobile sidebar menu - enhanced responsive design */}
         <div
-          className={`fixed z-2 top-0 w-64 bg-white h-[110vh] shadow-lg transition-all duration-300 ease-in-out ${
+          className={`fixed z-2 top-0 w-64 sm:w-72 bg-white h-[110vh] shadow-lg transition-all duration-300 ease-in-out ${
             isOpen ? "left-[-0%]" : "left-[-100%]"
           }`}
         >
-          <div className="px-4 pt-3 pb-3 bg-white flex justify-between border-b border-zinc-400">
-            <Link href="/" className="text-xl font-bold text-gray-800">
+          {/* Mobile sidebar header */}
+          <div className="px-3 sm:px-4 pt-2 sm:pt-3 pb-2 sm:pb-3 bg-white flex justify-between border-b border-zinc-400">
+            <Link
+              href="/"
+              className="text-lg sm:text-xl font-bold text-gray-800"
+            >
               <Image
                 src={"/logo1.png"}
                 width={1000}
                 height={1000}
-                className="w-[auto] h-[40px]"
+                className="w-auto h-[35px] sm:h-[40px]"
                 alt="logo"
               />
             </Link>
             <button
               onClick={toggleMenuHandler}
-              className="text-gray-800 hover:text-gray-600"
+              className="text-gray-800 hover:text-gray-600 p-1"
             >
               <svg
-                className="h-6 w-6"
+                className="h-5 w-5 sm:h-6 sm:w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -423,22 +342,38 @@ export default function Navbar({}) {
               </svg>
             </button>
           </div>
-          <div className="pb-3 space-y-1 bg-white flex flex-col">
+
+          {/* Mobile sidebar content */}
+          <div className="pb-3 space-y-1 bg-white flex flex-col overflow-y-auto max-h-[calc(100vh-80px)]">
             <p
               onClick={() => redirect_Page("/")}
-              className="text-sm border-b border-zinc-200 py-2 px-4 text-gray-600 nav-link"
+              className="text-sm border-b border-zinc-200 py-2 sm:py-3 px-3 sm:px-4 text-gray-600 nav-link cursor-pointer hover:bg-gray-50"
             >
               Home
             </p>
+
+            {/* Mobile navigation links */}
+            {navLink.map((item, index) => (
+              <p
+                key={index}
+                onClick={() => redirect_Page(`/${language}/${item?.link}`)}
+                className="text-sm border-b border-zinc-200 py-2 sm:py-3 px-3 sm:px-4 text-gray-600 cursor-pointer hover:bg-gray-50"
+              >
+                {item.name}
+              </p>
+            ))}
+
+            {/* About us dropdown */}
             <div className="relative group">
-              {/* Dropdown Button */}
               <button
                 onClick={toggleDropdown}
-                className="text-sm px-4 text-gray-600 nav-link inline-flex items-center"
+                className="text-sm px-3 sm:px-4 py-2 sm:py-3 text-gray-600 nav-link inline-flex items-center w-full justify-between hover:bg-gray-50"
               >
                 <span>About us</span>
                 <svg
-                  className="w-4 h-4 ml-2"
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    togglemenu ? "rotate-180" : ""
+                  }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -452,99 +387,7 @@ export default function Navbar({}) {
                   />
                 </svg>
               </button>
-
-              {/* Dropdown Menu */}
-              <div
-                className={`overflow-hidden mt-2 shadow-lg bg-white transition-animation ${
-                  togglemenu ? "h-[fit-content]" : "h-[0px]"
-                } `}
-              >
-                <div className="py-1">
-                  <p
-                    onClick={() => redirect_Page("/about-us/team")}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Our Author
-                  </p>
-                  <p
-                    onClick={() => redirect_Page("/about-us/team")}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Our Editor
-                  </p>
-                  <p
-                    onClick={() => redirect_Page("/about-us/team")}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Our Reviewer
-                  </p>
-                </div>
-              </div>
             </div>
-            <div className="relative group">
-              {/* Dropdown Button */}
-              <button
-                onClick={toggleJournalDropdown}
-                className="text-sm px-4 text-gray-600 nav-link inline-flex items-center"
-              >
-                <span className="nav-link text-gray-600 font-semibold navitem">
-                  Journals
-                </span>
-                <svg
-                  className="w-4 h-4 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              {/* Dropdown Menu */}
-              <div
-                className={`overflow-hidden mt-2 shadow-lg bg-white transition-animation ${
-                  toggleJournalmenu ? "h-[fit-content]" : "h-[0px]"
-                } `}
-              >
-                <div className="py-1">
-                  {/* {
-                    getJournals?.data?.journal?.slice(0,8).map((journal,index)=>{
-                      return <p onClick={()=>redirect_Page(`/journal/${journal?.slug}`)}
-                    key={index}
-                    className="block px-4 py-2 text-xs text-gray-700 hover:bg-gray-100"
-                  >
-                    {journal?.name}
-                  </p>
-                    })
-                  } */}
-                </div>
-              </div>
-            </div>
-
-            <p
-              onClick={() => redirect_Page(`/books`)}
-              className="text-sm border-b border-zinc-200 py-2 px-4 text-gray-600"
-            >
-              Books
-            </p>
-            <p
-              onClick={() => redirect_Page(`/news-and-events`)}
-              className="text-sm border-b border-zinc-200 py-2 px-4 text-gray-600"
-            >
-              News and Events
-            </p>
-            <p
-              onClick={() => redirect_Page(`/contact-us`)}
-              className="text-sm border-b border-zinc-200 py-2 px-4 text-gray-600"
-            >
-              Contact Us
-            </p>
           </div>
         </div>
       </nav>

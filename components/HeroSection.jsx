@@ -14,8 +14,8 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="w-full py-3 px-2 sm:px-4 lg:px-4 mt-4 overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 border border-gray-300 rounded-xl p-4 lg:p-8">
+    <section className="w-full  overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 border border-gray-300 rounded-xl p-2 lg:p-3">
         {/* Left: Banner Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -26,7 +26,7 @@ export default function HeroSection() {
           <Image
             src={banner}
             alt="banner"
-            className="w-full h-auto max-h-[70vh] object-contain rounded-lg"
+            className="w-full  rounded-lg"
             priority
           />
         </motion.div>

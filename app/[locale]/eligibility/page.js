@@ -9,14 +9,15 @@ import React from "react";
 const page = () => {
   return (
     <>
-    <Navbar/>
-    <div className="mt-28">
-        <WelcomeHeader/>
-        <EvaluationForm/>
-      <Eligibility />
-      <FAQ />
-    </div>
-    <Footer/></>
+      <Navbar />
+      <div>
+        <WelcomeHeader />
+        <EvaluationForm />
+        <Eligibility />
+        <FAQ />
+      </div>
+      <Footer />
+    </>
   );
 };
 

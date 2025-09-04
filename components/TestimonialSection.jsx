@@ -142,15 +142,12 @@ const TestimonialSection = () => {
                     >
                       {testimonial.description}
                     </p>
-
-                    <button
+                    <Link
+                      href={"/testimonialdetail"}
                       className="text-red-500 font-semibold hover:text-gray-600 transition-colors duration-200 text-sm"
-                      onClick={() => handleToggle(testimonial.id)}
                     >
-                      {expandedId === testimonial.id
-                        ? "Read Less..."
-                        : "Read More..."}
-                    </button>
+                      Read More...
+                    </Link>
                   </div>
                 </SwiperSlide>
               ))}
