@@ -115,15 +115,15 @@ export default function HeroSection() {
       </div>
 
       {/* Right Tours List */}
-      <div className="relative z-10 w-full lg:w-1/4 shadow-2xl my-6 lg:my-10 lg:mr-5 rounded-2xl backdrop-blur-3xl text-gray-900 p-4 sm:p-5 max-h-[50vh] lg:max-h-[90vh] overflow-y-auto">
+      <div className="relative z-10 w-full lg:w-1/4 shadow-2xl my-5 lg:my-10 lg:mr-5 rounded-2xl backdrop-blur-3xl text-gray-900 p-3 sm:p-4">
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-6 text-white text-center lg:text-left">
           What can we do for you today?
         </h2>
-        <div className="space-y-3 sm:space-y-4">
-          {tours.map((tour, idx) => ( 
+        <div className="space-y-2 sm:space-y-3">
+          {tours.map((tour, idx) => (
             <div
               key={idx}
-              className={`flex items-center bg-gray-100 rounded-lg p-2 sm:p-3 shadow-sm hover:shadow-md transition cursor-pointer ${
+              className={`flex items-center bg-gray-100 rounded-lg p-1 sm:p-2 shadow-sm hover:shadow-md transition cursor-pointer ${
                 idx === slideIndex
                   ? "ring-2 ring-red-600 bg-red-100 scale-105"
                   : ""
