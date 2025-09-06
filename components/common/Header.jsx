@@ -175,7 +175,7 @@ export default function Navbar({}) {
                 {/* Placeholder for left side content */}
               </div>
 
-              <div className="flex items-center gap-1 sm:gap-2 md:gap-4 text-xs sm:text-sm overflow-x-auto">
+              <div className="flex items-center gap-1 sm:gap-2 md:gap-4 text-xs sm:text-sm">
                 {/* Contact info - responsive visibility */}
                 <p className="flex gap-1 items-center font-semibold text-gray-500 whitespace-nowrap">
                   <MdOutlineMailOutline className="text-sm sm:text-base" />
@@ -207,7 +207,7 @@ export default function Navbar({}) {
                   Blogs
                 </Link>
 
-                <div className="flex-shrink-0">
+                <div className="relative flex-shrink-0">
                   <LocaleSwitcher />
                 </div>
 
@@ -223,7 +223,7 @@ export default function Navbar({}) {
 
         {/* Main navigation */}
         <div className="container mx-auto px-2 sm:px-4 md:px-0">
-          <div className="flex justify-between items-center h-auto">
+          <div className="flex justify-between items-center ">
             {/* Logo - responsive sizing */}
             <Link href="/" className="relative flex-shrink-0">
               <Image
@@ -275,12 +275,11 @@ export default function Navbar({}) {
                       key={index}
                       href={`/${language}/${item?.link}`}
                       className={`
-                        ${item.color}
-                        nav-link text-gray-600 font-semibold navitem relative px-2 lg:px-3 xl:px-4 py-2 text-sm lg:text-base whitespace-nowrap ${
-                          navLink.length - 1 === index
-                            ? "border-r border-gray-300"
-                            : ""
-                        }`}
+        nav-link text-gray-600 font-semibold navitem relative
+        px-2 lg:px-3 xl:px-4 py-2 text-sm lg:text-base whitespace-nowrap
+        hover:bg-red-600 hover:text-white transition-colors duration-200
+        ${navLink.length - 1 === index ? "border-r border-gray-300" : ""}
+      `}
                     >
                       <span className="lg:hidden xl:inline">{item?.name}</span>
                       <span className="hidden lg:inline xl:hidden">
