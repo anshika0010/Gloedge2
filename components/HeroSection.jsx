@@ -3,6 +3,14 @@
 import { useState, useEffect } from "react";
 
 export default function HeroSection() {
+  const serviceColors = {
+    yellow: "bg-yellow-500 hover:bg-yellow-600",
+    purple: "bg-purple-500 hover:bg-purple-600",
+    blue: "bg-blue-500 hover:bg-blue-600",
+    green: "bg-green-500 hover:bg-green-600",
+    pink: "bg-pink-500 hover:bg-pink-600",
+    red: "bg-red-500 hover:bg-red-600",
+  };
   const tours = [
     {
       title: "Eligibility Check",
@@ -58,7 +66,7 @@ export default function HeroSection() {
 
   return (
     <div
-      className="relative bg-gray-900 text-white flex flex-col lg:flex-row bg-cover bg-center transition-all duration-700 ease-in-out "
+      className="relative bg-gray-900 text-white flex flex-col   lg:flex-row bg-cover bg-center transition-all duration-700 ease-in-out "
       style={{
         backgroundImage: `url(${tours[slideIndex].img})`,
       }}
@@ -115,38 +123,30 @@ export default function HeroSection() {
       </div>
 
       {/* Right Tours List */}
-      <div className="relative z-10 w-full lg:w-1/4 shadow-2xl my-5 lg:my-10 lg:mr-5 rounded-2xl backdrop-blur-3xl text-gray-900 p-3 sm:p-4">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-6 text-white text-center lg:text-left">
+
+      <div className="relative z-10 w-full lg:w-1/3 shadow-2xl my-6 lg:my-12 lg:mr-6 rounded-2xl backdrop-blur-xl bg-white/10 p-7 sm:p-6">
+        <h2 className="text-xl sm:text-2xl font-bold mb-6 text-white text-center lg:text-left">
           What can we do for you today?
         </h2>
-        <div className="space-y-2 sm:space-y-3">
-          {tours.map((tour, idx) => (
-            <div
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-2 gap-4">
+          {[
+            { label: "Study", color: "yellow" },
+            { label: "Migrate", color: "purple" },
+            { label: "Work", color: "blue" },
+            { label: "Visit", color: "green" },
+            { label: "Language", color: "pink" },
+            { label: "Citizenship", color: "red" },
+          ].map((service, idx) => (
+            <button
               key={idx}
-              className={`flex items-center bg-gray-100 rounded-lg p-1 sm:p-2 shadow-sm hover:shadow-md transition cursor-pointer ${
-                idx === slideIndex
-                  ? "ring-2 ring-red-600 bg-red-100 scale-105"
-                  : ""
-              }`}
-              onClick={() => setSlideIndex(idx)}
+              className={`flex items-center cursor-pointer justify-center text-center px-4 py-3 rounded-xl font-semibold shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ${
+                serviceColors[service.color]
+              } text-white`}
             >
-              <img
-                src={tour.img}
-                alt={tour.title}
-                className="w-16 h-12 sm:w-20 sm:h-14 rounded-md object-cover"
-              />
-              <div className="ml-3 sm:ml-4 flex-1">
-                <h3 className="font-semibold text-xs sm:text-sm md:text-base">
-                  {tour.title}
-                </h3>
-                <a
-                  href={tour.link}
-                  className="text-blue-600 text-xs sm:text-sm font-medium hover:underline mt-1 inline-block"
-                >
-                  More info →
-                </a>
-              </div>
-            </div>
+              {service.label}
+            </button>
           ))}
         </div>
       </div>

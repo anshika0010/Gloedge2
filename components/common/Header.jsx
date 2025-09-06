@@ -170,7 +170,7 @@ export default function Navbar({}) {
 
           {/* Contact info and links section */}
           <div className="container mx-auto px-2 sm:px-4 md:px-0">
-            <div className="flex items-center justify-between py-1 sm:py-2">
+            <div className="flex items-center justify-between ">
               <div className="hidden lg:block">
                 {/* Placeholder for left side content */}
               </div>
@@ -223,7 +223,7 @@ export default function Navbar({}) {
 
         {/* Main navigation */}
         <div className="container mx-auto px-2 sm:px-4 md:px-0">
-          <div className="flex justify-between items-center h-12 sm:h-14 lg:h-16">
+          <div className="flex justify-between items-center h-auto">
             {/* Logo - responsive sizing */}
             <Link href="/" className="relative flex-shrink-0">
               <Image
