@@ -88,7 +88,7 @@ const page = () => {
   return (
     <>
     <Navbar/>
-        <section className="bg-gray-50 py-16 px-4 mb-10 mt-35">
+        <section className="bg-gray-50 py-16 px-4 mb-10 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* LEFT SIDE - Testimonials */}
         <div className="lg:col-span-2">

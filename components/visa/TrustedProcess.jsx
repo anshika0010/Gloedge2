@@ -39,7 +39,7 @@ const TrustedProcess = () => {
               key={index}
               className="bg-white shadow-md shadow-orange-300 rounded-lg p-6 text-center"
             >
-              <h3 className="text-3xl font-bold text-orange-600">
+              <h3 className="text-3xl font-bold text-red-600">
                 {step.number}
               </h3>
               <h4 className="mt-2 text-lg font-semibold text-gray-900">
@@ -52,7 +52,7 @@ const TrustedProcess = () => {
 
         {/* Refer a Friend Section */}
         {/* Refer a Friend Section */}
-        <div className="mt-16 py-8 grid grid-cols-1 md:grid-cols-2 bg-orange-100 rounded-lg overflow-hidden">
+        <div className="mt-16 py-8 grid grid-cols-1 md:grid-cols-2 bg-red-200 rounded-lg overflow-hidden">
           {/* Left Content */}
           <div className="p-8 flex flex-col justify-center">
             <h3 className="text-3xl font-bold text-gray-900">Refer a Friend</h3>

@@ -10,7 +10,7 @@ const page = () => {
   return (
     <>
     <Navbar/>
-    <div className="mt-36">
+    <div className="">
       <HeroSection />
       <ReferralReward />
       <ReferralBenefits />

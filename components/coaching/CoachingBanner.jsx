@@ -19,7 +19,7 @@ const CoachingBanner = () => {
   return (
     <div className="flex flex-col md:flex-row items-center container my-4 mx-auto shadow-lg">
       {/* Left Content Section */}
-      <div className="w-full md:w-1/2 bg-[#1456A8] text-white flex flex-col justify-center px-8 py-12 relative">
+      <div className="w-full md:w-1/2 bg-red-600 text-white flex flex-col justify-center px-8 py-12 relative">
         {/* Orange Bar */}
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-2 h-12 bg-orange-500"></div>
 

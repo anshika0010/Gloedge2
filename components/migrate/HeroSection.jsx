@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import HeroImage from "@/images/Migrate.jpg";
+import HeroImage from "@/images/girlmigrate.jpg";
 import { MotionDiv } from "@/components/motion/MotionComponents";
 import Heading from "@/components/common/Heading";
 
@@ -38,14 +38,14 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="flex container mx-auto flex-col lg:flex-row bg-white border border-gray-300 overflow-hidden shadow-md mt-38">
+    <div className="flex container mx-auto flex-col lg:flex-row bg-white border border-gray-300 overflow-hidden shadow-md ">
       {/* LEFT SIDE IMAGE (60%) */}
-        <MotionDiv
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative flex-[3] h-[220px] lg:h-auto"
-        >
+      <MotionDiv
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="relative flex-[3] h-[220px] lg:h-auto"
+      >
         <Image
           src={HeroImage}
           alt="Work Visa"
@@ -54,15 +54,21 @@ export default function HeroSection() {
           className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
           priority
         />
-        </MotionDiv>
+      </MotionDiv>
 
       {/* RIGHT SIDE FORM (40%) */}
       <div className="flex-[2] bg-white relative flex flex-col justify-center">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-40 bg-red-600"></div>
+        {/* <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-40 bg-yellow-400"></div> */}
 
         <div className="max-w-sm mx-auto py-6 px-4">
-          <Heading text={"Secure Your Work Visa"} className={"text-xl font-bold text-gray-900 mb-1"}/>
-          <Heading text={"Quickly & Easily"} className={"text-lg font-bold text-gray-900 mb-2"}/>
+          <Heading
+            text={"Secure Your Work Visa"}
+            className={"text-xl font-bold text-gray-900 mb-1"}
+          />
+          <Heading
+            text={"Quickly & Easily"}
+            className={"text-lg font-bold text-gray-900 mb-2"}
+          />
           <p className="text-sm text-gray-600 mb-4">
             Want to Work Overseas? Avail our Job Search Services
           </p>
@@ -173,9 +179,7 @@ export default function HeroSection() {
               </div>
 
               {/* Submit */}
-              <button
-                className="w-full bg-[#6E2A8F] hover:[bg-[#b37dce] text-white font-semibold py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105 text-sm"
-              >
+              <button className="Allbtn w-full">
                 Get Started
               </button>
 

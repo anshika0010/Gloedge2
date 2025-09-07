@@ -87,10 +87,7 @@ export default function HeroSection() {
             {tours[slideIndex].desc}
           </p>
 
-          <a
-            href={tours[slideIndex].link}
-            className="inline-block mt-6 bg-red-600 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md shadow-md hover:bg-red-500 transition text-sm sm:text-base"
-          >
+          <a href={tours[slideIndex].link} className="Allbtn">
             Get Free Eligibility Guidance →
           </a>
         </div>

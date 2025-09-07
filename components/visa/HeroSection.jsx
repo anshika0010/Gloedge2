@@ -4,12 +4,12 @@ import visahero from "@/images/visahero.png";
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#fff9f5]">
+    <section className="bg-red-200">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 py-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         
         {/* LEFT SIDE TEXT */}
         <div>
-          <span className="inline-block bg-[#f55f3e] text-white text-sm font-medium px-4 py-2 rounded">
+          <span className="inline-block bg-red-600 text-white text-sm font-medium px-4 py-2 rounded">
             YOUR PATH TO NEW BEGINNINGS
           </span>
 
@@ -22,7 +22,7 @@ const HeroSection = () => {
             visa process for every journey.
           </p>
 
-          <button className="mt-4 px-6 py-3 bg-[#f55f3e] text-white font-medium rounded hover:bg-[#e14c2e] transition">
+          <button className="mt-4 px-6 py-3 bg-red-600 text-white font-medium rounded hover:bg-[#e14c2e] transition">
             Apply Now
           </button>
         </div>

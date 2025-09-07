@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
     <Navbar/>
-    <div className="mt-30">
+    <div className="mx-4">
       <HeroSection />
       <WhyChooseUs />
       <BigVisaSection />

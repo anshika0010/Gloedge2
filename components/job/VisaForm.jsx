@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import HeroImage from "@/images/work-hero.jpg";
+import HeroImage from "@/images/job-hero.jpg";
 import HeaderForm from "../common/HeaderForm";
 
 export default function VisaForm() {

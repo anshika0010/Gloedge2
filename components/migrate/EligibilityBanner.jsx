@@ -13,7 +13,7 @@ const EligibilityBanner = () => {
       </div>
 
       {/* Right Content Section */}
-      <div className="w-full h-[100%] md:w-1/2 bg-[#6E2A8F] text-white flex flex-col justify-center items-start px-8 py-12 relative">
+      <div className="w-full h-[100%] md:w-1/2 bg-[#cf3030] text-white flex flex-col justify-center items-start px-8 py-12 relative">
         {/* Orange Bar */}
         <div className="h-[100%] absolute left-0 top-1/2 transform -translate-y-1/2 w-2 h-12 bg-orange-500"></div>
 

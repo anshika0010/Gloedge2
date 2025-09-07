@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../common/Heading";
 import Image from "next/image";
 import expertImg from "@/images/banner-expert.jpg";
-import bannerCourseImg from "@/images/banner-course-selection.jpg"
+import bannerCourseImg from "@/images/banner-course-selection.jpg";
 import purposeImg from "@/images/banner-purpose.jpg";
 import coachingImg from "@/images/banner-coaching.jpg";
 import recommendationImg from "@/images/banner-recommendation.jpg";
@@ -97,7 +97,10 @@ const Services = () => {
                 <div className="relative p-8 flex flex-col justify-center">
                   {/* Always inside content left side middle */}
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-20 bg-red-600"></div>
-                  <Heading text={service.title} className={"text-2xl md:text-3xl font-bold text-gray-900"}/>
+                  <Heading
+                    text={service.title}
+                    className={"text-2xl md:text-3xl font-bold text-gray-900"}
+                  />
                   <p className="mt-2 text-gray-700">{service.description}</p>
 
                   <ul className="mt-5 space-y-2 text-gray-800">
@@ -109,9 +112,9 @@ const Services = () => {
                     ))}
                   </ul>
 
-                  <button className="mt-6 relative bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 flex items-center gap-2 w-fit shadow-md">
+                  <button className="mt-6 relative Allbtn font-semibold px-6 py-2 flex items-center gap-2 w-fit shadow-md">
                     Chat with us <span className="text-lg">→</span>
-                    <span className="absolute right-0 top-0 h-full w-1 bg-red-600"></span>
+                    <span className="absolute right-0 top-0 h-full w-1 bg-yellow-400"></span>
                   </button>
                 </div>
               </>
@@ -121,7 +124,10 @@ const Services = () => {
                 <div className="relative p-8 flex flex-col justify-center order-2 md:order-1">
                   {/* Always inside content left side middle */}
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-20 bg-red-600"></div>
-                  <Heading text={service.title} className="text-2xl md:text-3xl font-bold text-gray-900"/>
+                  <Heading
+                    text={service.title}
+                    className="text-2xl md:text-3xl font-bold text-gray-900"
+                  />
                   <p className="mt-2 text-gray-700">{service.description}</p>
 
                   <ul className="mt-5 space-y-2 text-gray-800">
@@ -133,9 +139,9 @@ const Services = () => {
                     ))}
                   </ul>
 
-                  <button className="mt-6 relative bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 flex items-center gap-2 w-fit shadow-md">
+                  <button className="mt-6 relative Allbtn font-semibold px-6 py-2 flex items-center gap-2 w-fit shadow-md">
                     Chat with us <span className="text-lg">→</span>
-                    <span className="absolute right-0 top-0 h-full w-1 bg-red-600"></span>
+                    <span className="absolute right-0 top-0 h-full w-1 bg-yellow-400"></span>
                   </button>
                 </div>
 

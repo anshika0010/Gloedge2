@@ -13,6 +13,7 @@ import { IoNotifications } from "react-icons/io5";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import AnimatedLink from "./AnimatedLink";
 import { useLocale } from "next-intl";
 
 const navLink = [
@@ -161,9 +162,7 @@ export default function Navbar({}) {
                 </div>
               </div>
               <div className="flex-shrink-0">
-                <button className="bg-[#da010b] text-white font-semibold py-1.5 px-2 sm:py-2 sm:px-4 rounded-sm shadow-md hover:shadow-xl transition-all duration-300 text-xs sm:text-sm">
-                  Watch Now
-                </button>
+                <button className="Allbtn">Watch Now</button>
               </div>
             </div>
           </div>
@@ -269,25 +268,19 @@ export default function Navbar({}) {
             {/* Desktop navigation - enhanced responsive design */}
             <div className="hidden md:flex items-center" ref={dropdownRef}>
               <div className="flex items-center ">
-                {navLink.map((item, index) => {
-                  return (
-                    <Link
-                      key={index}
-                      href={`/${language}/${item?.link}`}
-                      className={`
-        nav-link text-gray-600 font-semibold navitem relative
-        px-2 lg:px-3 xl:px-4 py-2 text-sm lg:text-base whitespace-nowrap
-        hover:bg-red-600 hover:text-white transition-colors duration-200
-        ${navLink.length - 1 === index ? "border-r border-gray-300" : ""}
-      `}
-                    >
-                      <span className="lg:hidden xl:inline">{item?.name}</span>
-                      <span className="hidden lg:inline xl:hidden">
-                        {item?.name.split(" ")[0]}
-                      </span>
-                    </Link>
-                  );
-                })}
+                {navLink.map((item, index) => (
+                  <AnimatedLink
+                    key={index}
+                    href={`/${language}/${item?.link}`}
+                    text={item?.name}
+                    className={`
+      nav-link text-gray-600 font-semibold navitem
+      px-2 lg:px-3 xl:px-4 py-2 text-sm lg:text-base whitespace-nowrap
+      hover:bg-red-600 hover:text-white transition-colors duration-200
+      ${navLink.length - 1 === index ? "border-r border-gray-300" : ""}
+    `}
+                  />
+                ))}
               </div>
             </div>
           </div>

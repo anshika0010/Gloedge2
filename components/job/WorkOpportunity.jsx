@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Heading from "../common/Heading";
 import { useEffect, useRef } from "react";
@@ -9,12 +9,12 @@ import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 const WorkOpportunity = () => {
-  const language = useLocale()
-   const containerRef = useRef(null);
+  const language = useLocale();
+  const containerRef = useRef(null);
 
- useEffect(() => {
+  useEffect(() => {
     const cards = containerRef.current.querySelectorAll(".work-opportunity");
-    gsap.set(cards, { y: 50, opacity: 0 }); 
+    gsap.set(cards, { y: 50, opacity: 0 });
     gsap.to(cards, {
       y: 0,
       opacity: 1,
@@ -30,7 +30,12 @@ const WorkOpportunity = () => {
   return (
     <div className=" mx-auto border border-gray-300  mt-4 bg-white">
       <div className="bg-gray-200 p-6 mb-6">
-        <Heading text={"Work Opportunity"} className={" flex justify-center text-center text-4xl font-bold text-black mb-6"}/>
+        <Heading
+          text={"Work Opportunity"}
+          className={
+            " flex justify-center text-center text-4xl font-bold text-black mb-6"
+          }
+        />
 
         {/* Search Section */}
         <div className="flex flex-col md:flex-row gap-7 justify-center items-center mb-4">
@@ -48,7 +53,7 @@ const WorkOpportunity = () => {
             <option>UK</option>
             <option>Dubai</option>
           </select>
-          <button className="bg-[#009bad] text-white px-12 py-3 rounded font-semibold hover:bg-text-[#004a52] transition">
+          <button className="Allbtn  px-10 rounded font-semibold hover:bg-text-[#004a52] transition">
             Search
           </button>
         </div>
@@ -63,7 +68,10 @@ const WorkOpportunity = () => {
       </div>
 
       {/* Categories */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 m-3" ref={containerRef}>
+      <div
+        className="grid grid-cols-1 md:grid-cols-4 gap-6 m-3"
+        ref={containerRef}
+      >
         {/* By Country */}
         <div className="border border-gray-300 p-4 flex flex-col h-80 work-opportunity">
           <h3 className="font-bold text-lg text-gray-800 mb-2  bg-white sticky top-0 py-2 z-10">
@@ -72,41 +80,58 @@ const WorkOpportunity = () => {
           </h3>
           <ul className="space-y-2 text-blue-900 overflow-y-auto custom-scrollbar">
             <li>
-              <Link href={`/${language}/detail/okok`} className="flex justify-between">
-              <span>Jobs in USA</span>{" "}
-              <span className="text-red-600 text-3xl font-semibold">...</span>
-            </Link>
+              <Link
+                href={`/${language}/detail/okok`}
+                className="flex justify-between"
+              >
+                <span>Jobs in USA</span>{" "}
+                <span className="text-red-600 text-3xl font-semibold">...</span>
+              </Link>
             </li>
-            <li >
-              <Link href={`/${language}/detail/okok`} className="flex justify-between">
-              <span>Jobs in Germany</span>{" "}
-              <span className="text-red-600 text-3xl font-semibold">...</span>
-            </Link>
+            <li>
+              <Link
+                href={`/${language}/detail/okok`}
+                className="flex justify-between"
+              >
+                <span>Jobs in Germany</span>{" "}
+                <span className="text-red-600 text-3xl font-semibold">...</span>
+              </Link>
             </li>
-            <li >
-              <Link href={`/${language}/detail/okok`} className="flex justify-between">
-              <span>Jobs in Canada</span>{" "}
-              <span className="text-red-600 text-3xl font-semibold">...</span>
-            </Link>
-              
+            <li>
+              <Link
+                href={`/${language}/detail/okok`}
+                className="flex justify-between"
+              >
+                <span>Jobs in Canada</span>{" "}
+                <span className="text-red-600 text-3xl font-semibold">...</span>
+              </Link>
             </li>
-            <li >
-               <Link href={`/${language}/detail/okok`} className="flex justify-between">
-              <span>Jobs in Canada</span>{" "}
-              <span className="text-red-600 text-3xl font-semibold">...</span>
-            </Link>
+            <li>
+              <Link
+                href={`/${language}/detail/okok`}
+                className="flex justify-between"
+              >
+                <span>Jobs in Canada</span>{" "}
+                <span className="text-red-600 text-3xl font-semibold">...</span>
+              </Link>
             </li>
-            <li >
-               <Link href={`/${language}/detail/okok`} className="flex justify-between">
-              <span>Jobs in Canada</span>{" "}
-              <span className="text-red-600 text-3xl font-semibold">...</span>
-            </Link>
+            <li>
+              <Link
+                href={`/${language}/detail/okok`}
+                className="flex justify-between"
+              >
+                <span>Jobs in Canada</span>{" "}
+                <span className="text-red-600 text-3xl font-semibold">...</span>
+              </Link>
             </li>
-            <li >
-              <Link href={`/${language}/detail/okok`} className="flex justify-between">
-              <span>Jobs in Canada</span>{" "}
-              <span className="text-red-600 text-3xl font-semibold">...</span>
-            </Link>
+            <li>
+              <Link
+                href={`/${language}/detail/okok`}
+                className="flex justify-between"
+              >
+                <span>Jobs in Canada</span>{" "}
+                <span className="text-red-600 text-3xl font-semibold">...</span>
+              </Link>
             </li>
           </ul>
         </div>
@@ -118,19 +143,33 @@ const WorkOpportunity = () => {
             <span className="absolute top-0 left-0 w-8 h-1 bg-red-600"></span>
           </h3>
           <ul className="space-y-2 text-blue-900 overflow-y-auto custom-scrollbar">
-            <li><Link href={`/${language}/detail/okok`}>
-              IT
-            </Link></li>
-            <li><Link href={`/${language}/detail/okok`}>
-              Engineering
-            </Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Marketing and Sales</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>HR</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Healthcare</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Teachers</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Accountants</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Nursing</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Hospitality</Link></li>
+            <li>
+              <Link href={`/${language}/detail/okok`}>IT</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/okok`}>Engineering</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>Marketing and Sales</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>HR</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>Healthcare</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>Teachers</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>Accountants</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>Nursing</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>Hospitality</Link>
+            </li>
           </ul>
         </div>
 
@@ -141,12 +180,32 @@ const WorkOpportunity = () => {
             <span className="absolute top-0 left-0 w-8 h-1 bg-red-600"></span>
           </h3>
           <ul className="space-y-2 text-blue-900 overflow-y-auto custom-scrollbar">
-            <li><Link href={`/${language}/detail/ok`}>Australia Work Visa</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Canada Work Visa</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>UK Skilled Worker Visa</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Germany Opportunity Card</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Sweden Residence Permit</Link></li>
-            <li><Link href={`/${language}/detail/ok`}>Portugal Jobseeker Visa</Link></li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>Australia Work Visa</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>Canada Work Visa</Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>
+                UK Skilled Worker Visa
+              </Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>
+                Germany Opportunity Card
+              </Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>
+                Sweden Residence Permit
+              </Link>
+            </li>
+            <li>
+              <Link href={`/${language}/detail/ok`}>
+                Portugal Jobseeker Visa
+              </Link>
+            </li>
           </ul>
         </div>
 

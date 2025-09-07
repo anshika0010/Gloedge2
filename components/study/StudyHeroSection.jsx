@@ -29,7 +29,7 @@ export default function StudyHeroSection() {
   return (
   <>
   
-    <div className="flex container mx-auto flex-col lg:flex-row min-h-[500px] bg-white  border border-gray-200 overflow-hidden mt-35">
+    <div className="flex container mx-auto flex-col lg:flex-row min-h-[500px] bg-white  border border-gray-200 overflow-hidden ">
       <div className="lg:w-1/2 bg-white ">
         <Image
           src={HeroImage}
@@ -146,7 +146,7 @@ export default function StudyHeroSection() {
 
             <button
               onClick={handleSubmit}
-              className="w-full bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold py-4 px-6 rounded-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300 hover:from-orange-600 hover:to-yellow-600 active:scale-95"
+              className="w-full Allbtn text-white font-semibold py-4 px-6 rounded-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300 active:scale-95"
             >
               Get Started
             </button>

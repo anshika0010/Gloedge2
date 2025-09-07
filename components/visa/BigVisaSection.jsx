@@ -75,7 +75,7 @@ const BigVisaSection = () => {
               >
                 <h3 className="text-lg font-bold">{visa.title}</h3>
                 <p className="text-sm mt-1">{visa.desc}</p>
-                <button className="mt-3 inline-flex items-center px-4 py-2 bg-white text-black font-medium text-sm rounded-full hover:bg-gray-200 transition">
+                <button className="mt-3 Allbtn rounded-full hover:bg-gray-200 transition">
                   Apply now →
                 </button>
               </div>

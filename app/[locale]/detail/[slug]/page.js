@@ -11,16 +11,17 @@ import React from "react";
 const page = () => {
   return (
     <>
-    <Navbar/>
-    <div className="mt-37">
-      <VisaForm />
-      <CareerSection />
-      <EngineeringJobsAbroad />
-      <VisaAbroadPage />
-      <Faq />
-      <WhyChoose />
-    </div>
-    <Footer/></>
+      <Navbar />
+      <div className="">
+        <VisaForm />
+        <CareerSection />
+        <EngineeringJobsAbroad />
+        <VisaAbroadPage />
+        <Faq />
+        <WhyChoose />
+      </div>
+      <Footer />
+    </>
   );
 };
 

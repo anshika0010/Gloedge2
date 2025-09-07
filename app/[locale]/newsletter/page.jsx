@@ -18,7 +18,7 @@ const page = () => {
   return (
     <>
         <Header/>
-        <div className='container mx-auto relative mt-33'>
+        <div className='container mx-auto relative '>
             <Image
             src={blogicon}
             alt='icon'

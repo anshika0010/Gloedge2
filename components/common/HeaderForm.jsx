@@ -38,10 +38,10 @@ const HeaderForm = ({popClasses="text-[#e72727]",buttonClasses="bg-[#e72727]",fo
                     <label className='font-semibold text-sm '>I accept the Terms & Conditions</label>
                 </div>
                 <div>
-                    <button className={`w-full py-3  ${buttonClasses} text-white font-semibold `}>Submit</button>
+                    <button className={`w-full py-3  ${buttonClasses} Allbtn `}>Submit</button>
                 </div>
                 <div>
-                    <p className='font-bold text-lg'>Don't know what to do <span className={`'cursor-pointer hover:underline cursor-pointer ${popClasses} `}>Get free Counselling</span></p>
+                    <p className='font-bold text-lg'>Don't know what to do <span className={`'cursor-pointer hover:underline cursor-pointer bg- white text-red-500 ${popClasses} `}>Get free Counselling</span></p>
                 </div>
             </div>
         </form>

@@ -7,7 +7,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className="mt-2">
+      <div className="mt-1">
         <TestimonialDetail />
       </div>
     </>

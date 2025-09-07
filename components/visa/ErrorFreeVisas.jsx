@@ -57,7 +57,7 @@ const ErrorFreeVisas = () => {
         </div>
 
         {/* Stats Bar */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 bg-orange-50 rounded-lg py-6 mx-10">
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 bg-red-100 rounded-lg py-6 mx-10">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <h3 className="text-2xl font-bold text-gray-900">{stat.number}</h3>

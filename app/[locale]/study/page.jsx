@@ -16,7 +16,7 @@ const Study = () => {
   return (
     <>
     <Navbar/>
-      <div className=" mt-32">
+      <div className=" mx-4">
         <StudyHeroSection />
         <StudyAbroadSection />
         <div className="w-full bg-white">

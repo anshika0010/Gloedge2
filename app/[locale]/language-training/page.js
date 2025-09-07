@@ -15,7 +15,7 @@ const page = () => {
   return (
     <>
     <Navbar/>
-        <div className="mt-38">
+        <div className="mx-4">
       <HeroSection />
       <CoachingBanner />
       <LearningSolutions />

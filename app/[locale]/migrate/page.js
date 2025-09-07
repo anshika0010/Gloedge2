@@ -16,7 +16,7 @@ const page = () => {
   return (
 <>
 <Navbar/>
-    <div className="mt-28">
+    <div className="mx-4">
       <HeroSection />
       <MigrateOpportunity/>
       <EligibilityBanner/>

@@ -8,7 +8,7 @@ const page = () => {
   return (
     <>
     <Header/>
-        <div className='container mx-auto py-8 mt-33'>
+        <div className='container mx-auto py-8 '>
         <Breadcrumb name={"Terms and Conditions"} />
         <h1 className='font-bold text-xl md:text-3xl mt-7 mb-2'>Terms and Conditions</h1>
         <div className='text-sm text-justify space-y-6 w-[100%] mx-auto'>

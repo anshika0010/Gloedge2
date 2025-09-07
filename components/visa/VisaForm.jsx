@@ -95,7 +95,7 @@ const VisaForm = () => {
             <div className="col-span-1 md:col-span-2">
               <button
                 type="submit"
-                className="w-full py-3 bg-[#e95420] text-white font-semibold rounded hover:bg-[#d64615] transition"
+                className="w-full py-3 bg-red-600 text-white font-semibold rounded hover:bg-red-400 transition"
               >
                 Apply Now
               </button>

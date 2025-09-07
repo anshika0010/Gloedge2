@@ -120,7 +120,7 @@ const ImmigrationInfoo = () => {
       </ul>
       <a
         href="#"
-        className="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+        className="Allbtn rounded hover:bg-blue-700"
       >
         Apply Now
       </a>

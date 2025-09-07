@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
 
         {/* CTA Button */}
         <div className="mt-12">
-          <button className="px-6 py-3 bg-[#f55f3e] text-white font-semibold rounded hover:bg-[#e14c2e] transition">
+          <button className="px-6 py-3 bg-red-600 text-white font-semibold rounded hover:bg-[#cb2d0e] transition">
             Speak to an Expert
           </button>
         </div>

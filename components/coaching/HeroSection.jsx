@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import HeroImage from "@/images/coaching.jpg";
+import HeroImage from "@/images/banner-coaching.jpg";
 
 export default function HeroSection() {
   const [formData, setFormData] = useState({
@@ -167,7 +167,7 @@ export default function HeroSection() {
               {/* Submit */}
               <button
                 onClick={handleSubmit}
-                className="w-full bg-[#1456A8] hover:bg-[#74cee7] text-white font-semibold py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105 text-sm"
+                className="w-full Allbtn  transition-all duration-300 transform hover:scale-105 text-sm"
               >
                 Get Started
               </button>

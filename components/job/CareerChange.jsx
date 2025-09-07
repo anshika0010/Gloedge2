@@ -11,7 +11,7 @@ export default function CareerChangePage() {
 
   return (
     <div className="font-sans">
-      <section className="bg-[#019CAD] text-white text-center py-12 ">
+      <section className="bg-red-600 text-white text-center py-12 ">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Want a Career change?
         </h2>

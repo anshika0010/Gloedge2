@@ -40,10 +40,10 @@ const CareerSection = () => {
           </ul>
 
           {/* Button */}
-          <button className="mt-6 relative bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 flex items-center gap-2 w-fit shadow-md">
+          <button className="mt-6 relative Allbtn font-semibold px-6 py-2 flex items-center gap-2 w-fit shadow-md">
             View Openings <span className="text-lg">→</span>
             {/* small red bar */}
-            <span className="absolute right-0 top-0 h-full w-1 bg-red-600"></span>
+            <span className="absolute right-0 top-0 h-full w-1 bg-yellow-400"></span>
           </button>
         </div>
       </div>

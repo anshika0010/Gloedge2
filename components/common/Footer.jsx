@@ -483,7 +483,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
             <div className="mb-6 lg:mb-0">
               <Image
-                src={"/logo1.png"}
+                src={"/logo2.png"}
                 alt="gloedge Logo"
                 width={1000}
                 height={1000}
