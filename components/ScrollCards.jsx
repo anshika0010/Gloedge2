@@ -446,7 +446,6 @@ const ScrollCards = () => {
             </div>
           </div>
 
-          <div className="text-center mt-6 text-sm text-gray-500">Click and grap and drag to slide horizontally</div>
         </div>
       </div>
 
