@@ -50,7 +50,7 @@ export default function StudyHeroSection() {
           <Heading
             text={"Study Abroad With Gloedge-Visas"}
             className={
-              "text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-900 mb-4 hover:text-orange-500 transition-colors duration-300"
+              "text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-900 mb-4 hover:text-red-500 transition-colors duration-300"
             }
           />
           <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-6">
@@ -149,7 +149,7 @@ export default function StudyHeroSection() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transform hover:scale-105 hover:shadow-lg transition-all duration-300 active:scale-95"
+              className="w-full bg-red-600 hover:bg-red-400 text-white font-semibold py-3 px-6 rounded-lg transform hover:scale-105 hover:shadow-lg transition-all duration-300 active:scale-95"
             >
               Get Started
             </button>
