@@ -73,12 +73,35 @@ export default function HeroSection() {
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
-
       {/* Left Hero Section */}
-      <div className="relative z-10 flex-1 flex flex-col justify-between px-4 sm:px-6 md:px-10 lg:px-14 py-12 md:py-20 text-center lg:text-left"></div>
-
+      <div className="relative z-10 flex-1 flex flex-col justify-between px-4 sm:px-6 md:px-10 lg:px-14 py-12 md:py-20 text-center lg:text-left">
+        {/* Navigation */}
+        <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex items-center gap-3 sm:gap-4">
+          <button
+            onClick={prevSlide}
+            className="w-7 h-7 sm:w-8 sm:h-8 border rounded-full flex items-center justify-center hover:bg-white hover:text-black"
+          >
+            ←
+          </button>
+          <div className="flex gap-1 sm:gap-2">
+            {tours.map((_, idx) => (
+              <span
+                key={idx}
+                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition ${
+                  idx === slideIndex ? "bg-yellow-400" : "bg-gray-400"
+                }`}
+              ></span>
+            ))}
+          </div>
+          <button
+            onClick={nextSlide}
+            className="w-7 h-7 sm:w-8 sm:h-8 border rounded-full flex items-center justify-center hover:bg-white hover:text-black"
+          >
+            →
+          </button>
+        </div>
+      </div>{" "}
       {/* Right Tours List */}
-
       <div className="relative z-10 w-full lg:w-1/3 shadow-2xl my-6 lg:my-12 lg:mr-6 rounded-2xl backdrop-blur-xl bg-white/10 p-7 sm:p-6">
         <h2 className="text-xl sm:text-2xl font-bold mb-6 text-white text-center lg:text-left">
           <span className="text-red-600 font-semibold">GlOEDGE–</span> Guiding
