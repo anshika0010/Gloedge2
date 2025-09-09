@@ -66,7 +66,7 @@ export default function HeroSection() {
 
   return (
     <div
-      className="relative bg-gray-900 text-white flex flex-col   lg:flex-row bg-cover bg-center transition-all duration-700 ease-in-out "
+      className="relative bg-gray-900 text-white flex flex-col  min-h-[500px]  lg:flex-row bg-cover bg-center transition-all duration-700 ease-in-out "
       style={{
         backgroundImage: `url(${tours[slideIndex].img})`,
       }}
@@ -75,55 +75,14 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50 z-0"></div>
 
       {/* Left Hero Section */}
-      <div className="relative z-10 flex-1 flex flex-col justify-between px-4 sm:px-6 md:px-10 lg:px-14 py-12 md:py-20 text-center lg:text-left">
-        <div>
-          <p className="uppercase tracking-wide text-xs sm:text-sm mb-2">
-            Our Services
-          </p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-            {tours[slideIndex].title}
-          </h1>
-          <p className="mt-4 max-w-xl mx-auto lg:mx-0 text-gray-200 text-sm sm:text-base md:text-lg">
-            {tours[slideIndex].desc}
-          </p>
-
-          <a href={tours[slideIndex].link} className="Allbtn">
-            Get Free Eligibility Guidance →
-          </a>
-        </div>
-
-        {/* Navigation */}
-        <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex items-center gap-3 sm:gap-4">
-          <button
-            onClick={prevSlide}
-            className="w-7 h-7 sm:w-8 sm:h-8 border rounded-full flex items-center justify-center hover:bg-white hover:text-black"
-          >
-            ←
-          </button>
-          <div className="flex gap-1 sm:gap-2">
-            {tours.map((_, idx) => (
-              <span
-                key={idx}
-                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition ${
-                  idx === slideIndex ? "bg-yellow-400" : "bg-gray-400"
-                }`}
-              ></span>
-            ))}
-          </div>
-          <button
-            onClick={nextSlide}
-            className="w-7 h-7 sm:w-8 sm:h-8 border rounded-full flex items-center justify-center hover:bg-white hover:text-black"
-          >
-            →
-          </button>
-        </div>
-      </div>
+      <div className="relative z-10 flex-1 flex flex-col justify-between px-4 sm:px-6 md:px-10 lg:px-14 py-12 md:py-20 text-center lg:text-left"></div>
 
       {/* Right Tours List */}
 
       <div className="relative z-10 w-full lg:w-1/3 shadow-2xl my-6 lg:my-12 lg:mr-6 rounded-2xl backdrop-blur-xl bg-white/10 p-7 sm:p-6">
         <h2 className="text-xl sm:text-2xl font-bold mb-6 text-white text-center lg:text-left">
-          What can we do for you today?
+          <span className="text-red-600 font-semibold">GlOEDGE–</span> Guiding
+          You Beyond Borders.
         </h2>
 
         {/* Services Grid */}
@@ -145,6 +104,11 @@ export default function HeroSection() {
               {service.label}
             </button>
           ))}
+        </div>
+
+        {/* Centered Button */}
+        <div className="flex justify-center mt-6">
+          <button className="Allbtn px-10 py-4">Get Free Guidence Now</button>
         </div>
       </div>
     </div>
