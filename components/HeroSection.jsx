@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 
 export default function HeroSection() {
   const serviceColors = {
-    yellow: "bg-yellow-500 hover:bg-yellow-600",
-    purple: "bg-purple-500 hover:bg-purple-600",
-    blue: "bg-blue-500 hover:bg-blue-600",
-    green: "bg-green-500 hover:bg-green-600",
+    yellow: "bg-green-600 hover:bg-green-400",
+    purple: "bg-blue-400 hover:bg-blue-600",
+    blue: "bg-[#009bad] hover:bg-[#009bad]",
+    green: "bg-yellow-400 hover:bg-yellow-600",
     pink: "bg-pink-500 hover:bg-pink-600",
     red: "bg-red-500 hover:bg-red-600",
   };

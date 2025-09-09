@@ -1,136 +1,150 @@
-import React from "react";
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { ShieldCheck, Sparkles, FileCheck2, AlertTriangle } from "lucide-react";
+import visa2 from "../../images/visa2.jpg";
 
-const Eligibility = () => {
+export default function Eligibility() {
   return (
-    <div className="container mx-auto py-12 text-gray-800">
-      
-      <h2 className="text-2xl font-bold mb-4 text-gray-900">
-        Why opt Y-Axis Eligibility Calculator?
-      </h2>
-      <ul className="list-disc pl-6 mb-8 space-y-2">
-        <li>Check your eligibility for FREE.</li>
-        <li>Get your team instantly.</li>
-        <li>Boost your job profile.</li>
-        <li>Easy tips to improve your score.</li>
-        <li>Immediate assistance by Y-Axis professionals.</li>
-      </ul>
+    <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-6">
+      <div className="max-w-8xl mx-auto space-y-16">
+        {/* Section 1 - Why an Eligibility Evaluation Matters */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Why an Eligibility Evaluation Matters
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Eligibility checks help you assess whether your profile qualifies
+            for migration, saving both time and effort before applying. Many
+            countries—such as Australia, Canada, the UK, and Germany—employ
+            points-based systems, where your age, education, work experience,
+            language skills, and more are scored. Understanding your eligibility
+            early helps you make informed decisions.
+          </p>
+        </motion.div>
 
-      {/* Immigration Points Calculator */}
-      <h2 className="text-2xl font-bold mb-4 text-gray-900">
-        Immigration Points calculator
-      </h2>
-      <ul className="list-disc pl-6 mb-8 text-blue-600 space-y-2">
-        <li>
-          <a href="#">UK Immigration Points Calculator</a>
-        </li>
-        <li>
-          <a href="#">Australia Immigration Points Calculator</a>
-        </li>
-        <li>
-          <a href="#">Canada Immigration Points Calculator</a>
-        </li>
-        <li>
-          <a href="#">Germany Immigration Points Calculator</a>
-        </li>
-        <li>
-          <a href="#">Canada SNP Calculator</a>
-        </li>
-        <li>
-          <a href="#">Quebec Immigration Points Calculator</a>
-        </li>
-      </ul>
+        {/* Section 2 - Why Use the Tool */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white shadow-lg rounded-2xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8 hover:shadow-2xl transition duration-300"
+        >
+          <div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+              <Sparkles className="text-red-600 w-6 h-6" /> Why Use the GloEdge
+              Eligibility Tool?
+            </h3>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="text-red-600 font-bold">•</span> Instant
+                Results – Get your eligibility check in minutes
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-600 font-bold">•</span>{" "}
+                Country-Specific Assessment – Tailored checks for the UK,
+                Canada, Australia, Germany & more
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-600 font-bold">•</span> Transparent
+                Guidance – See what’s working for you and what needs improvement
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-600 font-bold">•</span> Expert Support
+                – Connect with seasoned immigration advisors for a detailed
+                action plan
+              </li>
+            </ul>
+          </div>
+          <div className="flex justify-center items-center">
+            <Image
+              src={visa2}
+              alt="Eligibility Tool"
+              className="rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+              width={400} // set appropriate width
+              height={300} // set appropriate height
+            />
+          </div>
+        </motion.div>
 
-      {/* Y-Axis Eligibility Evaluation */}
-      <h2 className="text-2xl font-bold mb-4 text-gray-900">
-        Y-Axis Eligibility Evaluation
-      </h2>
-      <p className="mb-4">
-        When you plan to migrate abroad to work, invest, or settle, you must
-        first determine whether you can apply for a visa to enter that nation.
-        This can help you evaluate whether applying for a visa to migrate to a
-        given nation is worth your time and effort. This is where determining
-        eligibility is crucial.
-      </p>
-      <p className="mb-4">
-        Each country has its own set of eligibility criteria. Countries such as
-        Australia, Canada, Saskatchewan, Quebec, the United Kingdom, and Germany
-        use a points-based system to determine whether applicants are eligible
-        to live, work, or study in their country.
-      </p>
-      <p className="mb-4">
-        Your eligibility depends on factors like your educational
-        qualifications, work experience, language proficiency, number of points
-        obtained and the condition for earning them by each country.
-      </p>
-      <p className="mb-6">
-        Eligibility evaluation is a process that determines whether or not you
-        might be able to apply for a specific visa for a particular country.
-        Regarding migration, countries like Canada, Australia, and the United
-        Kingdom require points-based eligibility evaluation.
-      </p>
-      <p className="mb-6">
-        You must obtain an eligibility evaluation before filling out the
-        application form for these nations. This will assist you in determining
-        whether you satisfy the requirements and can move ahead with the
-        process. As a result, you’ll be able to only prepare and not dragging
-        the visa.
-      </p>
-      <p className="mb-6">
-        Y-Axis helps you do accurate assessment and analysis of your eligibility
-        evaluation process. With an Eligibility Evaluation, we assess your
-        profile against the requirements and recommend the best program to boost
-        your application chances of success.
-      </p>
+        {/* Section 3 - What You’ll Get */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="grid md:grid-cols-3 gap-6"
+        >
+          {[
+            {
+              title: "Straightforward Result",
+              desc: "Yes, you qualify / No, you don’t qualify",
+              icon: <ShieldCheck className="w-10 h-10 text-green-600" />,
+            },
+            {
+              title: "If You Qualify",
+              desc: "Guidance on application steps, documents, and timelines",
+              icon: <FileCheck2 className="w-10 h-10 text-blue-600" />,
+            },
+            {
+              title: "If You Don’t Qualify",
+              desc: "Suggestions to improve (language test, more work years, or alternative visa options)",
+              icon: <AlertTriangle className="w-10 h-10 text-yellow-600" />,
+            },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="mb-4">{item.icon}</div>
+              <h4 className="font-semibold text-lg text-gray-900 mb-2">
+                {item.title}
+              </h4>
+              <p className="text-gray-600">{item.desc}</p>
+            </div>
+          ))}
+        </motion.div>
 
-      {/* Y-Axis Eligibility Score Calculator */}
-      <h2 className="text-2xl font-bold mb-4 text-gray-900">
-        Y-Axis Eligibility Score Calculator
-      </h2>
-      <p className="mb-4">
-        The Y-Axis Eligibility Evaluation helps you check your eligibility with
-        the Y-Axis points calculator. This will help you understand the strong
-        factors in your profile, which will help you decide which country you
-        will have greater chances of migrating to.
-      </p>
-      <p className="mb-4">
-        It will assist you in understanding what your strengths are in your
-        profile, what areas to improve, and what actions to take to boost your
-        chances to fly abroad.
-      </p>
-      <p className="mb-6">
-        Get detailed insights with the help of Y-Axis’ professional services. We
-        provide you with a cost and time-efficient consulting to help you know
-        exactly where you stand.
-      </p>
+        {/* Section 4 - Why an Eligibility Check Matters */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all duration-300"
+        >
+          <h3 className="text-2xl font-bold mb-6">
+            Why an Eligibility Check Matters
+          </h3>
+          <ul className="space-y-3 text-base">
+            <li>✔ Filtering whether you meet the minimum requirements</li>
+            <li>✔ Preventing rejected applications</li>
+            <li>✔ Helping you focus only on realistic visa options</li>
+            <li>✔ Giving you a clear direction before you invest further</li>
+          </ul>
+        </motion.div>
 
-      {/* Disclaimer */}
-      <h3 className="text-lg font-semibold mb-2">Disclaimer</h3>
-      <div className="bg-gray-100 border-l-4 border-gray-400 p-4 text-sm text-gray-700">
-        <p>
-          A quick eligibility check of Y-Axis is only to help the applicants
-          understand their scores. The points displayed are based on your
-          answers only. Please note the points are not guaranteed and may differ
-          depending on the visa immigration guidelines, and technical evaluation
-          & scores is a must to assess your accurate eligibility to migrate.
-          Y-Axis suggests you take the technical evaluation for better
-          understanding & accurate results.
-        </p>
-        <p className="mt-2">
-          Y-Axis’ Eligibility check is a quick tool for self-assessment. The
-          results are based on your input & may not be 100% accurate. Still,
-          they will give you an idea of your profile strength. Y-Axis strongly
-          recommends you opt for a detailed eligibility evaluation. Such
-          assessment will give you complete insights on your score, suitable
-          programs, and chances of success.
-        </p>
-        <p className="mt-2">
-          Different visas will have their own criteria & visa prerequisites,
-          which an applicant should satisfy. So, it’s very important for an
-          applicant to apply for a technical evaluation.
-        </p>
+        {/* Section 5 - Disclaimer */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-md"
+        >
+          <h4 className="text-lg font-semibold text-yellow-800 mb-2">
+            ⚠️ Disclaimer
+          </h4>
+          <p className="text-yellow-700">
+            This tool provides a basic qualification check based on the
+            information you share. Final results depend on official immigration
+            authorities. For an in-depth assessment, consult our licensed visa
+            experts.
+          </p>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Eligibility;
+}

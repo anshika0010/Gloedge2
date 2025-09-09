@@ -33,7 +33,16 @@ const Banner = () => {
               viewport={{ once: false }}
               transition={{ duration: 0.9 }}
             >
-              When it comes to Canada PR, the Startup Visa has quickly become the most preferred category. With its easy eligibility criteria and unique pathway for entrepreneurs, it offers a smoother route to permanent residency compared to traditional programs. More and more applicants are now choosing this visa as the smartest way to secure their future in Canada.
+              When it comes to Canada PR, the Start-Up Visa has quickly become
+              the most preferred pathway. With its simplified eligibility
+              criteria for skilled and entrepreneurial professionals, it offers
+              assured permanent residency, a secured open work permit and
+              potential investment returns from a promising start-up project.
+              <p>
+                This program has even revived the halted journeys of many
+                aspirants toward Canada! The quota is limited, and the number of
+                applicants is rising rapidly.
+              </p>
             </MotionP>
             <Link
               href={"/contact-us"}

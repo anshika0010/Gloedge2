@@ -102,15 +102,16 @@ export default function ServicesSection() {
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-6 md:space-y-8 sticky top-24">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
-              What can we do for you today?
+              <span className="text-red-600 text-semibold"> GlOEDGE–</span>{" "}
+              Guiding You Beyond Borders.
             </h2>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-              Choose a service to explore how we can help you study, migrate,
-              work, visit, or even get citizenship. Our team ensures you get
-              personalized guidance at every step.
+              Take the first step toward studying, working, migrating, or
+              settling abroad. From education to citizenship, we provide
+              personalized guidance at every stage of your journey.
             </p>
             <button className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#da010b] text-white font-semibold rounded-md shadow-md hover:bg-red-600 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              Get Free Counselling
+              Get Free Guidance Now
             </button>
           </div>
 

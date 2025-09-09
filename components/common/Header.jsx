@@ -27,12 +27,12 @@ const navLink = [
   {
     name: "Migrate",
     link: "migrate",
-    color: "after:bg-[#6e298e] hover:bg-[#6e298e] hover:text-white",
+    color: "after:bg-blue-400 hover:bg-blue-400 hover:text-white",
   },
   {
     name: "Study",
     link: "study",
-    color: "after:bg-yellow-500 hover:bg-yellow-500 hover:text-white",
+    color: "after:bg-green-600 hover:bg-green-600 hover:text-white",
   },
   {
     name: "Job",
@@ -47,7 +47,7 @@ const navLink = [
   {
     name: "Citizenship",
     link: "invest",
-    color: "after:bg-green-500 hover:bg-green-500 hover:text-white",
+    color: "after:bg-green-900 hover:bg-green-900 hover:text-white",
   },
   {
     name: "Language Training",

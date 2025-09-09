@@ -11,14 +11,11 @@ const WhyChooseUsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-            <div className="flex justify-between">
+            <div className="flex justify-center">
               <Heading
-                text={"Why Choose Us?"}
+                text={"You are rightly choosing US!"}
                 className={"py-4 text-4xl font-bold text-gray-900 mb-6"}
               />
-              <button className="text-red-600 underline font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
-                Read More
-              </button>
             </div>
 
             {/* Stats Grid */}
@@ -31,9 +28,9 @@ const WhyChooseUsSection = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">25+ Years</p>
+                  <p className="text-xl font-bold text-gray-900">25 Years</p>
                   <p className="text-sm text-gray-600 leading-tight">
-                    of Immigration & Visa Expertise
+                    of legacy Expertise
                   </p>
                 </div>
               </div>
@@ -46,9 +43,9 @@ const WhyChooseUsSection = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">1000s</p>
+                  <p className="text-xl font-bold text-gray-900">50+ years</p>
                   <p className="text-sm text-gray-600 leading-tight">
-                    of Successful PR & Visa Approvals
+                    Visas-All category
                   </p>
                 </div>
               </div>
@@ -63,7 +60,7 @@ const WhyChooseUsSection = () => {
                 <div>
                   <p className="text-xl font-bold text-gray-900">100+</p>
                   <p className="text-sm text-gray-600 leading-tight">
-                    Global Partners powering strong international networks
+                    Presence Accross the globe
                   </p>
                 </div>
               </div>
@@ -76,9 +73,9 @@ const WhyChooseUsSection = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-gray-900">50+</p>
+                  <p className="text-xl font-bold text-gray-900">1000s</p>
                   <p className="text-sm text-gray-600 leading-tight">
-                    Visa Programs
+                    of Successful PR & Visa Approvals
                   </p>
                 </div>
               </div>

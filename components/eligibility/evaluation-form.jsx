@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import questionsByCountry from "./questionsByCountry"; 
+import questionsByCountry from "./questionsByCountry";
 import { QuestionStep } from "./QuestionStep";
 import { ProgressIndicator } from "./progress-indicator";
 import { ScoreSidebar } from "./score-sidebar";
@@ -56,13 +56,16 @@ export function EvaluationForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto py-8">
+    <div className="min-h-screen bg-gray-50 max-w-8xl mx-auto">
+      <div className="container mx-auto pt-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main content */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-lg shadow-sm p-8">
-              <ProgressIndicator currentStep={step + 1} totalSteps={totalSteps} />
+              <ProgressIndicator
+                currentStep={step + 1}
+                totalSteps={totalSteps}
+              />
 
               <div className="mt-8">
                 {isContactStep ? (
@@ -107,9 +110,15 @@ export function EvaluationForm() {
             </div>
           </div>
 
-          {/* Sidebar */}
+          {/* Sidebar with Banner */}
           <div className="lg:col-span-1">
-            <ScoreSidebar country={country} score={0} />
+            <div className="bg-white rounded-lg shadow-md overflow-hidden sticky top-8">
+              <img
+                src="https://i.pinimg.com/1200x/bf/e6/fd/bfe6fd81cfb210eedf4d04571389a0fa.jpg"
+                alt="Visa Banner"
+                className="w-full h-[600px] object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
