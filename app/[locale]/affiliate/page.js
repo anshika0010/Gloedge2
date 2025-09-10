@@ -9,14 +9,15 @@ import React from "react";
 const page = () => {
   return (
     <>
-    <Navbar/>
-    <div className="">
-      <HeroSection />
-      <ReferralReward />
-      <ReferralBenefits />
-      <ReferralNotes />
-    </div>
-    <Footer/></>
+      <Navbar />
+      <div className=" bg-gradient-to-b from-red-50 via-white to-red-100">
+        <HeroSection />
+        {/* <ReferralReward /> */}
+        <ReferralBenefits />
+        {/* <ReferralNotes /> */}
+      </div>
+      <Footer />
+    </>
   );
 };
 

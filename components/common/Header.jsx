@@ -187,7 +187,7 @@ export default function Navbar({}) {
               <Link
                 href={`/${language}/affiliate`}
                 className={`
-                      hover:bg-[#494E3C] hover:text-white
+                      hover:bg-red-600 hover:text-white
                       text-gray-600 font-semibold navitem-top  relative `}
               >
                 Affiliate
