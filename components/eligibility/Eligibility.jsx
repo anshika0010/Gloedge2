@@ -6,7 +6,7 @@ import visa2 from "../../images/visa2.jpg";
 
 export default function Eligibility() {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-6">
+    <section className="bg-gradient-to-b from-gray-50 overflow-x-hidden to-white py-16 px-6">
       <div className="max-w-8xl mx-auto space-y-16">
         {/* Section 1 - Why an Eligibility Evaluation Matters */}
         <motion.div
@@ -114,7 +114,7 @@ export default function Eligibility() {
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all duration-300"
+          className="bg-[#da010b] overflow-x-hidden text-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all duration-300"
         >
           <h3 className="text-2xl font-bold mb-6">
             Why an Eligibility Check Matters

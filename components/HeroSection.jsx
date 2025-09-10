@@ -91,8 +91,8 @@ export default function HeroSection() {
           {[
             { label: "Study", color: "yellow" },
             { label: "Migrate", color: "purple" },
-            { label: "Work", color: "blue" },
-            { label: "Visit", color: "green" },
+            { label: "Job", color: "blue" },
+            { label: "Business", color: "green" },
             { label: "Language", color: "pink" },
             { label: "Citizenship", color: "red" },
           ].map((service, idx) => (

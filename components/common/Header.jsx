@@ -172,7 +172,7 @@ export default function Navbar({}) {
               </div>
             </div>
           </div>
-          <div className="flex container mx-auto px-4 md:px-0 gap-3 items-center flex justify-between ">
+          <div className=" container mx-auto px-4 md:px-0 gap-3 items-center flex justify-between ">
             <div>
               {/* <p className="flex gap-1 items-center font-semibold text-gray-500"><MdOutlineMailOutline className="text-lg"/> web@abhinav.com</p> */}
             </div>
@@ -219,7 +219,7 @@ export default function Navbar({}) {
             {/* Logo */}
             <Link href="/" className="relative">
               <Image
-                src={"/logo1 (2).png"}
+                src={"/logoo.png"}
                 alt="logo"
                 width={500}
                 height={500}

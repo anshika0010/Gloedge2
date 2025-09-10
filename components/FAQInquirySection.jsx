@@ -63,7 +63,7 @@ const FAQInquirySection = () => {
               "url('https://st5.depositphotos.com/62628780/65651/i/450/depositphotos_656518412-stock-photo-team-startup-group-high-five.jpg')",
           }}
         >
-          <div className="absolute inset-0 bg-red-600 rounded-2xl bg-opacity-20"></div>
+          <div className="absolute inset-0 bg-[#da010b] rounded-2xl bg-opacity-20"></div>
 
           <div className="relative max-w-xl mx-auto text-white">
             {/* Heading */}
@@ -124,7 +124,7 @@ const FAQInquirySection = () => {
                         name="goal"
                         value={option}
                         onChange={(e) => setGoal(e.target.value)}
-                        className="text-red-600 focus:ring-red-500"
+                        className="text-[#da010b]0 focus:ring-red-500"
                       />
                       <span>{option}</span>
                     </label>
@@ -151,7 +151,7 @@ const FAQInquirySection = () => {
                         type="checkbox"
                         name="country"
                         value={country}
-                        className="text-red-600 focus:ring-red-500"
+                        className="text-[#da010b] focus:ring-red-500"
                       />
                       <span>{country}</span>
                     </label>
@@ -190,7 +190,7 @@ const FAQInquirySection = () => {
               <div className="text-center space-y-2">
                 <button
                   type="submit"
-                  className="w-full md:w-auto px-6 py-3 bg-red-600 text-white font-semibold text-sm rounded-lg shadow-md hover:bg-red-700 transition duration-300"
+                  className="w-full md:w-auto px-6 py-3 bg-[#da010b] text-white font-semibold text-sm rounded-lg shadow-md hover:bg-red-700 transition duration-300"
                 >
                   YES, ASSESS MY PROFILE NOW!
                 </button>
@@ -247,7 +247,7 @@ const FAQInquirySection = () => {
             <p className="text-gray-700 text-sm mb-3">
               Our immigration experts are here to help you.
             </p>
-            <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 text-sm rounded">
+            <button className="bg-[#da010b] hover:bg-red-700 text-white font-semibold py-2 px-4 text-sm rounded">
               Schedule Free Consultation
             </button>
           </div>
