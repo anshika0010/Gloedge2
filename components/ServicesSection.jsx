@@ -14,16 +14,14 @@ import Image from "next/image";
 export default function ServicesSection() {
   const services = [
     {
-      title: "Australia",
-      img: australiaImg,
+      title: "USA",
+      img: usa,
       points: [
-        "PR Visa",
-        "Study Visas",
-        "Work Permits",
+        "Green Card",
+        "Study Visa",
+        "Work Permit",
         "Spouse/Family Visas",
-        "Business/Investor Visas",
-        "Job Seeker Visa",
-        "Employer Nomination Visa",
+        "Business & Investor Visas",
         "Visit/ Tourist Visa",
       ],
     },
@@ -41,18 +39,6 @@ export default function ServicesSection() {
       ],
     },
     {
-      title: "USA",
-      img: usa,
-      points: [
-        "Green Card",
-        "Study Visa",
-        "Work Permit",
-        "Spouse/Family Visas",
-        "Business & Investor Visas",
-        "Visit/ Tourist Visa",
-      ],
-    },
-    {
       title: "UK",
       img: hongkongImg,
       points: [
@@ -62,6 +48,20 @@ export default function ServicesSection() {
         "Spouse/Family Visas",
         "Business/Investor Visas",
         "Job Seeker Visa",
+        "Visit/ Tourist Visa",
+      ],
+    },
+    {
+      title: "Australia",
+      img: australiaImg,
+      points: [
+        "PR Visa",
+        "Study Visas",
+        "Work Permits",
+        "Spouse/Family Visas",
+        "Business/Investor Visas",
+        "Job Seeker Visa",
+        "Employer Nomination Visa",
         "Visit/ Tourist Visa",
       ],
     },
