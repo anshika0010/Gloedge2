@@ -135,7 +135,7 @@ export default function Navbar({}) {
                     <SwiperSlide>
                       <div className="h-full flex flex-col justify-center">
                         <h1 className="font-semibold text-sm">
-                          August 23,2025 | Kazakhstan
+                          August 23,2026 | Kazakhstan
                         </h1>
                         <p className="text-xs ">
                           Kazakhstan : Investor visa Introduced
@@ -274,13 +274,10 @@ export default function Navbar({}) {
                   </Link>
                 );
               })}
-
-             
             </div>
           </div>
         </div>
 
-        
         <div
           className={`fixed top-0 z-[-1] left-0 w-full h-[110vh] bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out z-40 ${
             isOpen ? "opacity-60 visible" : "opacity-0 invisible"
