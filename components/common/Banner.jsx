@@ -18,7 +18,7 @@ const Banner = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className="flex flex-col justify-center space-y-2 md:space-y-4">
             <MotionH1
-              className="text-2xl md:text-4xl text-white font-bold "
+              className="text-2xl md:text-3xl text-white font-bold "
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false }}
@@ -27,7 +27,7 @@ const Banner = () => {
               Why Everyone’s Choosing the Canada Startup Visa!
             </MotionH1>
             <MotionP
-              className="text-white"
+              className="text-white text-sm"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
@@ -38,15 +38,15 @@ const Banner = () => {
               criteria for skilled and entrepreneurial professionals, it offers
               assured permanent residency, a secured open work permit and
               potential investment returns from a promising start-up project.
-              <p>
+              <span>
                 This program has even revived the halted journeys of many
                 aspirants toward Canada! The quota is limited, and the number of
                 applicants is rising rapidly.
-              </p>
+              </span>
             </MotionP>
             <Link
               href={"/contact-us"}
-              className="inline-flex items-center px-8 py-3 bg-white text-[#da010b] w-[fit-content] font-semibold  shadow-md transition-all duration-300 transform hover:-translate-y-1"
+              className="inline-flex items-center px-8 py-2 bg-white text-[#da010b] w-[fit-content] font-semibold  shadow-md transition-all duration-300 transform hover:-translate-y-1"
             >
               <span>Contact Us</span>
             </Link>
