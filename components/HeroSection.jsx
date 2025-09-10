@@ -42,7 +42,7 @@ export default function HeroSection() {
   return (
     <div className="bg-black">
       <div
-      className="relative bg-gray-900 text-white flex flex-col left-[0px] h-[430px] lg:flex-row bg-cover bg-center transition-all duration-700 ease-in-out"
+      className="relative bg-gray-900 text-white flex flex-col left-[0px] max-h-[430px] lg:flex-row bg-cover bg-center transition-all duration-700 ease-in-out"
       style={{
         backgroundRepeat:"no-repeat",
         backgroundImage: `url(${tours[slideIndex].img.src})`,
