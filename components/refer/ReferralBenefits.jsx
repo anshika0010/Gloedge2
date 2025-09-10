@@ -8,8 +8,11 @@ import usa from "@/images/2.png";
 import europe from "@/images/beautiful-low-angle-photo-frauenkirche-lutheran-church-dresden-germany-night-sky.jpg";
 // import portugal from "@/images/ponte-de-barcelos-barcelos-medieval-bridge.jpg";
 import uae from "@/images/4.png";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function GloEdgeAffiliate() {
+  const language = useLocale();
   const steps = [
     "Complete your registration with the GloEdge Affiliate program",
     "Quickly share the details of your friends and family with GloEdge visas' team",
@@ -136,27 +139,21 @@ export default function GloEdgeAffiliate() {
         <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 animate-fade-in">
           <div>
             <h1 className="text-3xl md:text-4xl font-extrabold text-red-700 drop-shadow-md">
-              GloEdge Affiliate Program
+              How to become a Part of the Affiliate Program?
             </h1>
-            <p className="mt-2 text-sm md:text-base text-red-600/80 max-w-xl">
+            {/* <p className="mt-2 text-sm md:text-base text-red-600/80 max-w-xl">
               Join our uniquely designed affiliate program and earn cashback in
               INR when your referrals purchase any eligible visa service from
               GloEdge.
-            </p>
+            </p> */}
           </div>
           <div className="flex gap-3">
-            <a
-              href="#register"
-              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 transition-transform"
-            >
-              Register Now
-            </a>
-            <a
-              href="#tnc"
+            <Link
+              href={`/${language}/terms-and-conditions`}
               className="inline-flex items-center gap-2 border border-red-600 text-red-600 px-4 py-2 rounded-lg bg-white hover:bg-red-50 shadow-sm hover:scale-105 transition-transform"
             >
               Terms & Conditions
-            </a>
+            </Link>
           </div>
         </header>
 
