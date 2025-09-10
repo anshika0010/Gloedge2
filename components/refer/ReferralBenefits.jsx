@@ -308,9 +308,6 @@ export default function GloEdgeAffiliate() {
 
             {/* Buttons */}
             <div className="flex gap-4">
-              <button className="bg-white text-red-600 px-6 py-3 rounded-xl font-semibold shadow-md hover:scale-110 transition-transform">
-                Sign Up
-              </button>
               <button className="border border-white/70 px-6 py-3 rounded-xl hover:bg-white hover:text-red-600 transition-all hover:scale-105">
                 Contact Team
               </button>
