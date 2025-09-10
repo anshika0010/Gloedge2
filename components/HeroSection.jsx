@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import hero1 from "../images/new/hero1.jpeg";
-import hero2 from "../images/new/hero2.jpeg";
-import hero3 from "../images/new/hero3.jpeg";
+import hero1 from "@/images/new/hero1.jpeg";
+import hero2 from "@/images/new/hero2.jpeg";
+import hero3 from "@/images/new/hero3.jpeg";
 export default function HeroSection() {
   const serviceColors = {
     yellow: "bg-green-600 hover:bg-green-400",
@@ -40,9 +40,11 @@ export default function HeroSection() {
   }, [tours.length]);
 
   return (
-    <div
-      className="relative bg-gray-900 text-white flex flex-col min-h-[500px] lg:flex-row bg-fit  bg-center  transition-all duration-700 ease-in-out"
+    <div className="bg-black">
+      <div
+      className="relative bg-gray-900 text-white flex flex-col left-[0px] h-[430px] lg:flex-row bg-cover bg-center transition-all duration-700 ease-in-out"
       style={{
+        backgroundRepeat:"no-repeat",
         backgroundImage: `url(${tours[slideIndex].img.src})`,
       }}
     >
@@ -110,6 +112,7 @@ export default function HeroSection() {
           <button className="Allbtn px-10 py-4">Get Free Guidence Now</button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
