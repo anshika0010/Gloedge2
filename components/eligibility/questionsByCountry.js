@@ -117,8 +117,8 @@ const questionsByCountry = {
         "Visit/ Tourist Visa",
       ],
     },
-    { step: 10, info: "Almost There! Please fill in the form to continue." },
-    { step: 11, info: "Congratulations! You’re likely to qualify. 🎉" },
+    // { step: 10, info: "Almost There! Please fill in the form to continue." },
+    // { step: 11, info: "Congratulations! You’re likely to qualify. 🎉" },
   ],
 
   Australia: [
@@ -237,8 +237,8 @@ const questionsByCountry = {
         "Visit/ Tourist Visa",
       ],
     },
-    { step: 11, info: "Almost There! Please fill in the form to continue." },
-    { step: 12, info: "Congratulations! You’re likely to qualify. 🎉" },
+    // { step: 11, info: "Almost There! Please fill in the form to continue." },
+    // { step: 12, info: "Congratulations! You’re likely to qualify. 🎉" },
   ],
 
   UK: [

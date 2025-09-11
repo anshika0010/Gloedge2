@@ -97,13 +97,13 @@ export default function ServicesSection() {
 
   return (
     <section className="w-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 ">
         <div className="grid lg:grid-cols-6 gap-12 items-start">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-6 md:space-y-8 sticky top-24">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
-              <span className="text-red-600 text-semibold"> GlOEDGE–</span>{" "}
-              Guiding You Beyond Borders.
+            <h2 className="text-3xl sm:text-4xl  font-extrabold text-gray-900 leading-tight">
+              <span className="text-red-600 text-semibold">GLOEDGE</span>{" "}
+              Guiding You Beyond Borders
             </h2>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
               Take the first step toward studying, working, migrating, or
@@ -117,13 +117,13 @@ export default function ServicesSection() {
 
           {/* Right Cards */}
           <div className="lg:col-span-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
               {services.map((service, index) => {
                 const isFirst = index === 0;
                 return (
                   <div
                     key={index}
-                    className="group w-full h-72 sm:h-80 md:h-96 cursor-pointer"
+                    className="group w-full h-72 sm:h-80 md:h-85 cursor-pointer"
                     style={{ perspective: "1000px" }}
                     onMouseEnter={() => {
                       if (isFirst) setFirstFlipped(false);

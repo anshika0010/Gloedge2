@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 import { useLocale } from "next-intl";
 const Footer = () => {
-  const language = useLocale()
+  const language = useLocale();
   const [email, setEmail] = useState("");
 
   const handleNewsletterSubmit = () => {
@@ -65,21 +65,13 @@ const Footer = () => {
                   Office Network
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-red-600 text-sm transition-colors duration-300"
-                >
-                  Press and News
-                </a>
-              </li>
             </ul>
           </div>
 
           {/* Testimonials */}
           <div>
             <h3 className="font-bold text-gray-900 mb-4 uppercase tracking-wide text-sm">
-              Testimonials
+              Newsletter
             </h3>
             <ul className="space-y-2">
               <li>
@@ -146,7 +138,6 @@ const Footer = () => {
                 >
                   Newsletter
                 </Link>
-
               </li>
               <li>
                 <Link
@@ -205,14 +196,6 @@ const Footer = () => {
                   Marathi
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-red-600 text-sm transition-colors duration-300"
-                >
-                  Kannada
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -262,22 +245,6 @@ const Footer = () => {
                   Korean
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-red-600 text-sm"
-                >
-                  Ukrainian
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-red-600 text-sm"
-                >
-                  Italian
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -311,8 +278,7 @@ const Footer = () => {
         </div>
 
         {/* Country Offices */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 pt-8 border-t border-gray-300">
-          {/* Australia */}
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 pt-8 border-t border-gray-300">
           <div className="flex items-start space-x-2">
             <img
               src="https://flagcdn.com/16x12/au.png"
@@ -333,7 +299,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* UAE */}
           <div className="flex items-start space-x-2">
             <img
               src="https://flagcdn.com/16x12/ae.png"
@@ -354,7 +319,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* UK */}
           <div className="flex items-start space-x-2">
             <img
               src="https://flagcdn.com/16x12/gb.png"
@@ -375,7 +339,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Canada */}
           <div className="flex items-start space-x-2">
             <img
               src="https://flagcdn.com/16x12/ca.png"
@@ -395,86 +358,86 @@ const Footer = () => {
               </p>
             </div>
           </div>
+        </div> */}
+
+        {/* Social Media & Newsletter */}
+        <div className="flex flex-col lg:flex-row justify-between items-center pt-8 border-t border-gray-300">
+          {/* Social Media */}
+          <div className="flex items-center space-x-4 mb-6 lg:mb-0">
+            <span className="text-gray-900 font-medium text-sm">FOLLOW US</span>
+            <div className="flex space-x-3">
+              <a
+                href="https://www.youtube.com/@GloEdgeVisas"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 p-2 rounded hover:bg-red-700 hover:scale-110 transform transition-all duration-300"
+              >
+                <Youtube className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="https://x.com/GloEdgeVisas"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
+              >
+                <Twitter className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="https://www.instagram.com/gloedge_visas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-pink-600 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
+              >
+                <Instagram className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/gloedge-visas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
+              >
+                <Linkedin className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="https://www.facebook.com/gloedgevisas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-800 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
+              >
+                <Facebook className="w-4 h-4 text-white" />
+              </a>
+              <a
+                href="https://share.google/mg1Ehoj857XsHreRG"
+                target="_blank"
+                className="bg-red-700 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
+              >
+                <MapPin className="w-4 h-4 text-white" />
+              </a>
+            </div>
+          </div>
+
+          {/* Newsletter Subscription */}
+          <div className="flex items-center space-x-2">
+            <span className="text-gray-900 font-medium text-sm">
+              SUBSCRIBE NEWSLETTER
+            </span>
+            <div className="flex">
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="px-4 py-2 border border-gray-300 rounded-l text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+              />
+              <button
+                onClick={handleNewsletterSubmit}
+                className="bg-gray-600 hover:bg-red-600 text-white px-4 py-2 rounded-r text-sm transition-all duration-300 hover:scale-105 transform"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
-
-     {/* Social Media & Newsletter */}
-<div className="flex flex-col lg:flex-row justify-between items-center pt-8 border-t border-gray-300">
-  {/* Social Media */}
-  <div className="flex items-center space-x-4 mb-6 lg:mb-0">
-    <span className="text-gray-900 font-medium text-sm">FOLLOW US</span>
-    <div className="flex space-x-3">
-      <a
-        href="https://www.youtube.com/@GloEdgeVisas"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-red-600 p-2 rounded hover:bg-red-700 hover:scale-110 transform transition-all duration-300"
-      >
-        <Youtube className="w-4 h-4 text-white" />
-      </a>
-      <a
-        href="https://x.com/GloEdgeVisas"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-gray-800 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
-      >
-        <Twitter className="w-4 h-4 text-white" />
-      </a>
-      <a
-        href="https://www.instagram.com/gloedge_visas/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-pink-600 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
-      >
-        <Instagram className="w-4 h-4 text-white" />
-      </a>
-      <a
-        href="https://www.linkedin.com/company/gloedge-visas/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-600 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
-      >
-        <Linkedin className="w-4 h-4 text-white" />
-      </a>
-      <a
-        href="https://www.facebook.com/gloedgevisas/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-800 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
-      >
-        <Facebook className="w-4 h-4 text-white" />
-      </a>
-      <a
-        href="#"
-        className="bg-red-700 p-2 rounded hover:bg-red-600 hover:scale-110 transform transition-all duration-300"
-      >
-        <MapPin className="w-4 h-4 text-white" />
-      </a>
-    </div>
-  </div>
-
-  {/* Newsletter Subscription */}
-  <div className="flex items-center space-x-2">
-    <span className="text-gray-900 font-medium text-sm">
-      SUBSCRIBE NEWSLETTER
-    </span>
-    <div className="flex">
-      <input
-        type="email"
-        placeholder="Enter your Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className="px-4 py-2 border border-gray-300 rounded-l text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
-      />
-      <button
-        onClick={handleNewsletterSubmit}
-        className="bg-gray-600 hover:bg-red-600 text-white px-4 py-2 rounded-r text-sm transition-all duration-300 hover:scale-105 transform"
-      >
-        Submit
-      </button>
-    </div>
-  </div>
-</div>
-
       </div>
 
       {/* Bottom Section with Logo and Services */}
@@ -580,7 +543,7 @@ const Footer = () => {
               >
                 Terms & Conditions
               </Link>
-             
+
               <Link
                 href={`/${language}/privacy-policy`}
                 className="text-gray-600 hover:text-red-600 transition-colors duration-300 hover:underline"

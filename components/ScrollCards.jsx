@@ -224,7 +224,7 @@ const ScrollCards = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
           <div className="text-center md:text-left">
             <Heading
-              text={"Latest Articles"}
+              text={"Latest News Articles"}
               className="text-4xl font-bold text-gray-900 mb-4 md:mb-0"
             />
             <p className="text-sm text-gray-600 max-w-2xl">

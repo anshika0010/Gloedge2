@@ -48,16 +48,6 @@ const TestimonialSection = () => {
     },
   ];
 
-  const handleToggle = (id) => {
-    if (expandedId === id) {
-      setExpandedId(null);
-      swiperRef.current?.autoplay?.start();
-    } else {
-      setExpandedId(id);
-      swiperRef.current?.autoplay?.stop();
-    }
-  };
-
   return (
     <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-7xl mx-auto">
@@ -79,7 +69,7 @@ const TestimonialSection = () => {
               href={`/${language}/testimonials`}
               className="bg-white border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md inline-block"
             >
-              View All Testimonials
+              View All Reviews
             </Link>
           </div>
         </div>
@@ -143,7 +133,7 @@ const TestimonialSection = () => {
                       {testimonial.description}
                     </p>
                     <Link
-                      href={"/testimonialdetail"}
+                      href={`/${language}/testimonial/detail`}
                       className="text-red-500 font-semibold hover:text-gray-600 transition-colors duration-200 text-sm"
                     >
                       Read More...
