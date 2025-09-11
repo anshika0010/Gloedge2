@@ -15,6 +15,7 @@ import InvestorVisaOverview from "@/components/business/InvestorVisaOverview";
 import ROIAndGloEdge from "@/components/business/ROIAndGloEdge";
 import BusinessInvestorVisas from "@/components/business/BusinessInvestorVisas";
 import Steps from "@/components/business/Steps";
+import GloEdgeBanner from "@/components/business/GloEdgeBanner";
 
 const page = () => {
   return (
@@ -28,6 +29,7 @@ const page = () => {
         <InvestorVisaOverview />
         {/* <StepByStepVisaProcess /> */}
         <ROIAndGloEdge />
+        <GloEdgeBanner/>
         <BigVisaSection />
         <VisaCategory />
 

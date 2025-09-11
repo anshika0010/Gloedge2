@@ -110,7 +110,7 @@ export default function ROIAndGloEdge() {
             <p className="mt-2 text-slate-700">We create a bridge for you with the topmost designated venture capital firms or incubators for business visas like the Canada Start-up Visa.</p>
           </article>
 
-          <article className="bg-gradient-to-r from-rose-500 to-orange-400 text-white p-6 rounded-2xl shadow-lg">
+          {/* <article className="bg-gradient-to-r from-rose-500 to-orange-400 text-white p-6 rounded-2xl shadow-lg">
             <h4 className="text-lg font-semibold">Why is GloEdge Visas your Best Choice for Business and Investment Visas?</h4>
             <ul className="mt-4 space-y-3 text-sm">
               <li className="flex items-start gap-3">
@@ -139,7 +139,7 @@ export default function ROIAndGloEdge() {
                 Start Application
               </button>
             </div>
-          </article>
+          </article> */}
         </aside>
       </motion.div>
     </section>
