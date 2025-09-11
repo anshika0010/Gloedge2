@@ -52,43 +52,43 @@ export default function InvestorVisaOverview() {
   ];
 
   const types = [
-    "Direct Investment Visas — large capital placements (e.g., EB-5)",
-    "Entrepreneur / Start-up Visas — innovators with business plans",
-    "Golden Visas — real estate or fund-based residency (Portugal, Greece)",
-    "Passive Income Options — bonds, deposits, or regional programs",
-    "Australia BIIP — Business Innovation, Investor and Significant Investor streams",
+    "Direct Investment Visas – Large capital investment (e.g., USA EB-5).",
+    "Entrepreneur/Start-up Visas – For innovators with business ideas (UK, Canada).",
+    "Golden Visas – Real estate/property investment leading to residency such as Portugal, and Greece.",
+    "Passive Income Options – Government bonds, fixed deposits, or job creation programs like Malta, USA Regional Centers.",
+    "Australia Business Innovation & Investment Program (BIIP) – For entrepreneurs and investors who want to establish or manage a business in Australia, or invest in state-approved bonds and ventures. This includes: a) Business Innovation Stream – start or manage a business. b) Investor Stream – invest AUD 2.5M in state-nominated projects. c) Significant Investor Stream – invest AUD 5M in compliant investments.",
   ];
 
   const eligibility = [
     {
-      text: "Proof of minimum investment in the form of stocks, bonds, bank statements, or debentures.",
+      text: "Proof of Minimum amount of investment in the form of stocks, bonds, bank statements, debentures.",
       detail:
-        "Example: USA EB-5 requires USD 800,000–1,050,000; Canada Start-Up requires investment from a designated fund; Portugal Golden Visa requires EUR 250,000–500,000.",
+        "Example: USA EB-5 requires USD 800,000–1,050,000, Canada Start-Up requires investment from a designated fund, Portugal Golden Visa requires EUR 250,000–500,000.",
     },
     { text: "A detailed business plan." },
     {
-      text: "Liquid funds like cash or assets that can be legally transferred.",
+      text: "Liquid funds like cash or assets which can be transferred on a legal basis.",
     },
     {
-      text: "Job creation: Hiring local skilled people and contributing to the economic development of the destination country.",
+      text: "Creation of jobs and hiring of local skilled people showing contribution to the economic development of the nation you are doing business.",
     },
     {
-      text: "Business purpose: The trip should be connected with a genuine business activity.",
+      text: "The reason for the trip should be connected with a business purpose or activity.",
     },
     {
-      text: "Sufficient funds to cover travel expenses, living costs, and business operations abroad.",
+      text: "Evidence of sufficient funds to cover travel expenses, living costs, and business operations in the destination country.",
     },
     {
-      text: "Enterprise criteria compliance: The business or enterprise receiving the investment must meet the specific standards defined by the destination country.",
+      text: "The business or enterprise receiving the investment must meet specific criteria defined by the destination country.",
     },
     {
-      text: "Proven business experience: Demonstrable record of owning, managing, or investing in businesses.",
+      text: "Demonstrable experience in owning, managing, or investing in businesses.",
     },
     {
-      text: "Innovative business plan that shows uniqueness and growth potential.",
+      text: "Have a unique business plan which is innovative.",
     },
     {
-      text: "Language proficiency: English or French skills proven through a designated language test.",
+      text: "Proficiency in either English or French language. For this you need to take a language test from a designated agency of that nation.",
     },
   ];
 
@@ -235,17 +235,27 @@ export default function InvestorVisaOverview() {
             </h3>
             <ol className="mt-4 list-decimal list-inside space-y-2 text-slate-700">
               <li>
-                Easy and definite route to Permanent Residency and Citizenship.
+                Easy and definite route to Permanent Residency and Citizenship
+                in top abroad business nations.
               </li>
               <li>
-                International mobility — access to markets and visa-free travel.
+                International mobility: Access to international markets and
+                multiple countries visa-free.
               </li>
               <li>
-                Family benefits — healthcare, education, safe environment.
+                Benefits for Family: Free Universal Healthcare and treatments,
+                world class education for children below 18, and along with a
+                clean and safe environment.
               </li>
-              <li>Investing in stable economies builds a secure future.</li>
-              <li>Access to overseas skilled workers and resources.</li>
-              <li>Signals serious business intent and builds credibility.</li>
+              <li>
+                Investing in stable economies helps you build a safe and secure
+                future for yourself and your family.
+              </li>
+              <li>Overseas access to skilled workers and resources.</li>
+              <li>
+                Shows a serious business intent and helps with creating a
+                professional image.
+              </li>
             </ol>
           </article>
         </section>

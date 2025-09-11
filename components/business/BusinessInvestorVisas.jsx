@@ -83,8 +83,8 @@ export default function BusinessInvestorVisas() {
   const benefits = [
     "Easy and definite route to Permanent Residency and Citizenship in top abroad business nations.",
     "International mobility: Access to international markets and multiple countries visa-free.",
-    "Benefits for Family: Free healthcare, world-class education, and safe environment.",
-    "Investing in stable economies helps secure a safe future for family.",
+    "Benefits for Family: Free Universal Healthcare and treatments, world class education for children below 18, and along with a clean and safe environment.",
+    "Investing in stable economies helps you build a safe and secure future for yourself and your family.",
     "Overseas access to skilled workers and resources.",
     "Shows serious business intent and builds professional credibility.",
   ];
@@ -104,10 +104,12 @@ export default function BusinessInvestorVisas() {
         <p className="mt-4 text-slate-600 max-w-3xl mx-auto">
           A business or investor visa permits individuals who wish to migrate by
           investment or starting a business an opportunity. You can move to top
-          destinations like Canada, Australia, UK, USA, New Zealand, Europe and
-          establish your business. These visas are designed for entrepreneurs,
-          investors, and high-net-worth individuals to expand globally, gain
-          residency, and secure their family’s future.
+          business destinations like Canada, Australia, UK, USA, New Zealand,
+          Europe and establish your business. These visas are particularly
+          designed for entrepreneurs, investors, and high-net-worth individuals
+          who wish to expand businesses, gain permanent residency status , and
+          secure a future for their near and dear in any one of these overseas
+          business hubs.
         </p>
       </motion.div>
 

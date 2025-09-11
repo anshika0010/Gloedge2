@@ -13,7 +13,7 @@ export function EvaluationForm() {
   const [answers, setAnswers] = useState({});
 
   // ✅ All steps after country selection
-  const countryQuestions = country ? questionsByCountry[country] : [];
+  const countryQuestions = questionsByCountry[country] || [];
 
   // ✅ Total steps = 1 (country) + questions + contact + final
   const totalSteps = 1 + countryQuestions.length + 2;
@@ -28,15 +28,30 @@ export function EvaluationForm() {
     currentQuestion = {
       type: "country-selection",
       title: "Which country are you planning to immigrate to?",
-      options: ["USA", "Canada", "UK", "Australia", "New Zealand", "Europe"],
+      options: ["USA", "Canada", "UK", "Australia", "NewZealand", "Europe"],
     };
   } else if (!isContactStep && !isFinalStep) {
     currentQuestion = countryQuestions[step - 1]; // offset by 1
   }
 
-  const handleAnswer = (answer) => {
-    const newAnswers = { ...answers, [step]: answer };
-    setAnswers(newAnswers);
+  const handleAnswer = (answer, subQuestion = null) => {
+    setAnswers((prev) => {
+      const prevStepAnswer = prev[step] || {};
+
+      // Agar multi-yes-no hai to nested object update karo
+      if (currentQuestion.type === "multi-yes-no" && subQuestion) {
+        return {
+          ...prev,
+          [step]: {
+            ...prevStepAnswer,
+            [subQuestion]: answer,
+          },
+        };
+      }
+
+      // Normal case (single answer)
+      return { ...prev, [step]: answer };
+    });
 
     if (isCountryStep) {
       setCountry(answer);
