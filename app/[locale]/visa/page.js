@@ -14,6 +14,7 @@ import StepByStepVisaProcess from "@/components/business/StepByStepVisaProcess";
 import InvestorVisaOverview from "@/components/business/InvestorVisaOverview";
 import ROIAndGloEdge from "@/components/business/ROIAndGloEdge";
 import BusinessInvestorVisas from "@/components/business/BusinessInvestorVisas";
+import Steps from "@/components/business/Steps";
 
 const page = () => {
   return (
@@ -23,8 +24,9 @@ const page = () => {
         <HeroSection />
         {/* <WhyChooseUs /> */}
         <BusinessInvestorVisas />
+        <Steps/>
         <InvestorVisaOverview />
-        <StepByStepVisaProcess />
+        {/* <StepByStepVisaProcess /> */}
         <ROIAndGloEdge />
         <BigVisaSection />
         <VisaCategory />
