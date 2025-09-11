@@ -111,68 +111,71 @@ export default function BusinessInvestorVisas() {
         </p>
       </motion.div>
 
-      {/* Countries Accordion */}
-      <div className="space-y-4 mb-12">
-        {countries.map((c, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 8 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.05 }}
-            className="bg-white/70 backdrop-blur-md rounded-2xl shadow border border-slate-200"
-          >
-            <button
-              onClick={() => toggle(i)}
-              className="w-full flex items-center justify-between px-6 py-4 text-left"
-            >
-              <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-emerald-600" />
-                <span className="font-semibold">{c.name}</span>
-              </div>
-              <ChevronDown
-                className={`w-5 h-5 transition-transform ${
-                  openIndex === i ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-            {openIndex === i && (
-              <div className="px-6 pb-4">
-                <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
-                  {c.programs.map((p, j) => (
-                    <li key={j}>{p}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Top Visa Choices */}
-      <motion.div
-        initial={{ opacity: 0, y: 8 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="mb-12"
-      >
-        <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-          <Award className="w-6 h-6 text-amber-500" />
-          Top Visa Choices of 2025
-        </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {topChoices.map((choice, i) => (
+      {/* Countries + Top Choices in Split Layout */}
+      <div className="grid md:grid-cols-3 gap-8 mb-12 border border-gray-300 px-8 py-4">
+        {/* Countries Accordion (takes 2/3 width) */}
+        <div className="space-y-4 md:col-span-2">
+          {countries.map((c, i) => (
             <motion.div
               key={i}
-              whileHover={{ scale: 1.05 }}
-              className="bg-orange-500  text-white rounded-xl shadow p-4"
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.05 }}
+              className="bg-white/70 backdrop-blur-md rounded-2xl shadow border border-orange-200"
             >
-              {choice}
+              <button
+                onClick={() => toggle(i)}
+                className="w-full flex items-center justify-between px-6 py-4 text-left cursor-pointer"
+              >
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-5 h-5 text-emerald-600" />
+                  <span className="font-semibold">{c.name}</span>
+                </div>
+                <ChevronDown
+                  className={`w-5 h-5 transition-transform ${
+                    openIndex === i ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {openIndex === i && (
+                <div className="px-6 pb-4">
+                  <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
+                    {c.programs.map((p, j) => (
+                      <li key={j}>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
-      </motion.div>
+
+        {/* Top Visa Choices (takes 1/3 width, stacked) */}
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col"
+        >
+          <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+            <Award className="w-6 h-6 text-amber-500" />
+            Top Visa Choices of 2025
+          </h2>
+          <div className="space-y-4">
+            {topChoices.map((choice, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.05 }}
+                className="bg-orange-500 text-white rounded-xl shadow p-4 text-center font-medium"
+              >
+                {choice}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
 
       {/* Benefits */}
       <motion.div

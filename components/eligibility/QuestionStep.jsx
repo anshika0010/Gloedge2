@@ -52,7 +52,7 @@ export function QuestionStep({ question, selectedAnswer, onAnswer }) {
   return (
     <div className="space-y-8">
       {/* Question navigation tabs */}
-      <div className="flex flex-wrap gap-2">
+      {/* <div className="flex flex-wrap gap-2">
         {Array.from({ length: 12 }, (_, index) => (
           <div
             key={index}
@@ -65,7 +65,7 @@ export function QuestionStep({ question, selectedAnswer, onAnswer }) {
             Question {index + 1}
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Question title */}
       <h2 className="text-2xl font-semibold text-gray-900 leading-relaxed">
