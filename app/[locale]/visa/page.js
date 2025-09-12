@@ -16,6 +16,8 @@ import ROIAndGloEdge from "@/components/business/ROIAndGloEdge";
 import BusinessInvestorVisas from "@/components/business/BusinessInvestorVisas";
 import Steps from "@/components/business/Steps";
 import GloEdgeBanner from "@/components/business/GloEdgeBanner";
+import BusinessInvestorCountryCards from "@/components/business/BusinessInvestorCountryCards";
+import CallToActionBanner from "@/components/business/CallToActionBanner";
 
 const page = () => {
   return (
@@ -25,11 +27,14 @@ const page = () => {
         <HeroSection />
         {/* <WhyChooseUs /> */}
         <BusinessInvestorVisas />
-        <Steps/>
+
+        <BusinessInvestorCountryCards />
+        <Steps />
         <InvestorVisaOverview />
+        <CallToActionBanner/>
         {/* <StepByStepVisaProcess /> */}
         <ROIAndGloEdge />
-        <GloEdgeBanner/>
+        <GloEdgeBanner />
         <BigVisaSection />
         <VisaCategory />
 

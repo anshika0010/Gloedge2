@@ -186,7 +186,7 @@ export default function InvestorVisaOverview() {
         {/* Left Column */}
         <section className="lg:col-span-2 space-y-6">
           {/* Destinations */}
-          <article className="grid sm:grid-cols-2 gap-4">
+          {/* <article className="grid sm:grid-cols-2 gap-4">
             {destinations.map((d, i) => {
               const Icon = d.icon;
               return (
@@ -213,7 +213,7 @@ export default function InvestorVisaOverview() {
                 </motion.div>
               );
             })}
-          </article>
+          </article> */}
 
           {/* Visa Types */}
           <article className="bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow border border-white/30">
@@ -281,7 +281,7 @@ export default function InvestorVisaOverview() {
           </article>
 
           {/* Call to Action */}
-          <article className="bg-gradient-to-r from-rose-500 to-orange-400 text-white p-6 rounded-2xl shadow-lg">
+          {/* <article className="bg-gradient-to-r from-rose-500 to-orange-400 text-white p-6 rounded-2xl shadow-lg">
             <h4 className="text-lg font-semibold">Ready to start?</h4>
             <p className="mt-2 text-sm opacity-90">
               Book a free consultation with our visa specialists — we'll
@@ -297,16 +297,16 @@ export default function InvestorVisaOverview() {
                 Start Application
               </button>
             </div>
-          </article>
+          </article> */}
 
           {/* Timelines */}
-          <article className="bg-white/60 backdrop-blur-md rounded-2xl p-4 shadow border border-white/30 text-sm">
+          {/* <article className="bg-white/60 backdrop-blur-md rounded-2xl p-4 shadow border border-white/30 text-sm">
             <div className="font-medium">Estimated timelines</div>
             <p className="mt-2 text-slate-600">
               Nomination/endorsement, interviews and processing may add weeks —
               timelines depend on the program and country.
             </p>
-          </article>
+          </article> */}
         </aside>
       </main>
     </section>
