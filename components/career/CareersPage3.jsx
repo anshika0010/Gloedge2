@@ -11,7 +11,7 @@ import Image from "next/image";
 import career4 from "../../images/career4.jpg";
 export default function CareersPage3() {
   return (
-    <div className="w-full font-sans">
+    <div className="w-full font-sans overflow-x-hidden">
       {/* Section 7: Meritocracy */}
       <section className="px-6 md:px-16 py-12 bg-gray-50">
         <h3 className="text-xl md:text-2xl font-bold mb-4">7. Meritocracy</h3>
@@ -106,7 +106,7 @@ export default function CareersPage3() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
           <ul className="list-disc pl-5 space-y-2">
             <li>
-              Y-Axis is a good citizen who pays 100% of all the taxes due.
+              Gloedge is a good citizen who pays 100% of all the taxes due.
             </li>
             <li>
               We comply with every regulation with every statutory authority.
@@ -138,8 +138,8 @@ export default function CareersPage3() {
       </section>
 
       {/* Snapshot */}
-      <section className="px-6 md:px-16 py-12 bg-gray-50 text-center">
-        <h3 className="text-xl md:text-2xl font-bold mb-10">Y-Axis snapshot</h3>
+      <section className="px-6 md:px-16 py-12 bg-blue-100 text-center">
+        <h3 className="text-3xl md:text-3xl font-bold mb-10"> Gloedge snapshot</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-purple-700 font-bold text-2xl">
           <div>
             <p>100K+</p>

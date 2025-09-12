@@ -2,17 +2,17 @@ import React from "react";
 
 export default function Careers() {
   return (
-    <div className="w-full font-sans">
+    <div className="w-full font-sans overflow-x-hidden">
       {/* Section 3: Growth Mindset */}
       <section className="px-6 md:px-16 py-12 bg-gray-50">
-        <h3 className="text-xl md:text-2xl font-bold mb-4">
+        <h3 className="text-3xl md:text-3xl font-bold mb-4">
           3. Growth Mindset- Not Yet
         </h3>
         <p className="text-purple-700 font-medium mb-4">
           Platform | Learning | Open to change | Transparency | Meritocracy
         </p>
         <p className="text-gray-700">
-          Since 1999 Y-Axis has fostered a culture of growth through our
+          Since 1999 Gloedge has fostered a culture of growth through our
           philosophy of "Not Yet". Our aim is to continually learn and grow in
           order to prepare for the challenges ahead. Our openness to change, our
           investments in technology, our cutting-edge knowledge systems, our
@@ -23,7 +23,7 @@ export default function Careers() {
 
       {/* Section 4: Earn More */}
       <section className="px-6 md:px-16 py-12 bg-white">
-        <h3 className="text-xl md:text-2xl font-bold mb-4">4. Earn more</h3>
+        <h3 className="text-3xl md:text-3xl font-bold mb-4">4. Earn more</h3>
         <p className="text-gray-700 mb-6">
           Know what? We share nearly 12% of our Gross Sales with our Teams
           instantly. That is nearly 25% of our profits. More than 46% of our
@@ -37,7 +37,7 @@ export default function Careers() {
 
       {/* Compensation & Benefits */}
       <section className="py-10 px-6 md:px-16 bg-purple-700 text-white text-center">
-        <h4 className="text-lg font-semibold mb-8">
+        <h4 className="text-3xl font-semibold mb-8">
           Great Compensation & Benefits
         </h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-sm">
@@ -51,7 +51,7 @@ export default function Careers() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="flex items-center justify-center py-3 px-4 border border-white rounded"
+              className="flex items-center justify-center py-3 px-4 border-3 border-white rounded"
             >
               {item}
             </div>
@@ -61,7 +61,7 @@ export default function Careers() {
 
       {/* Section 5: Learn & Grow */}
       <section className="px-6 md:px-16 py-12 bg-white">
-        <h3 className="text-xl md:text-2xl font-bold mb-4">
+        <h3 className="text-3xl md:text-2xl font-bold mb-4">
           5. Opportunities to learn & grow
         </h3>
         <p className="text-purple-700 font-medium mb-4">
@@ -88,7 +88,7 @@ export default function Careers() {
             },
             {
               title: "Y-Global Track",
-              img: "https://www.y-axis.com/assets/cms/2023-10/Y-Global.webp",
+              img: "https://via.placeholder.com/300x200",
             },
           ].map((card, idx) => (
             <div
@@ -106,11 +106,11 @@ export default function Careers() {
 
       {/* Section 6: Cutting Edge Technology */}
       <section className="px-6 md:px-16 py-12 bg-gray-50">
-        <h3 className="text-xl md:text-2xl font-bold mb-4">
+        <h3 className="text-3xl md:text-2xl font-bold mb-4">
           6. Cutting edge technology
         </h3>
         <p className="text-gray-700 mb-6">
-          Y-AXIS is a 100% digital company. We use cutting-edge technologies
+          Gloedge is a 100% digital company. We use cutting-edge technologies
           like Salesforce CRM, Genesys Call Center Solutions and O365 to run our
           global operations. We are amongst the largest users of Salesforce.
         </p>

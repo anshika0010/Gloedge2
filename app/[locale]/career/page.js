@@ -9,7 +9,7 @@ const page = () => {
   return (
     <div>
       <Navbar />
-      <div className="px-8 overflow-x-hidden ">
+      <div className="px-4 overflow-x-hidden ">
         <CareersPage />
      <Careers/>
      <CareersPage3/>
