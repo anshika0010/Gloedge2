@@ -14,7 +14,9 @@ export default function CareersPage3() {
     <div className="w-full font-sans overflow-x-hidden">
       {/* Section 7: Meritocracy */}
       <section className="px-6 md:px-16 py-12 bg-gray-50">
-        <h3 className="text-xl md:text-2xl font-bold mb-4">7. Meritocracy</h3>
+        <h3 className="text-3xl md:text-3xl font-semibold mb-4">
+          7. Meritocracy
+        </h3>
         <p className="text-gray-700">
           We hire, reward, and promote talent purely based on merit. You are
           judged solely by your efforts, skills, abilities, and performance,
@@ -24,8 +26,8 @@ export default function CareersPage3() {
       </section>
 
       {/* Section 8: Work Life Balance */}
-      <section className="px-6 md:px-16 py-12 bg-white text-center">
-        <h3 className="text-xl md:text-2xl font-bold mb-4">
+      <section className="px-6 md:px-16 py-12 bg-purple-300 text-center">
+        <h3 className="text-3xl md:text-3xl font-semibold mb-4">
           8. Work Life Balance
         </h3>
         <p className="text-gray-700 max-w-3xl mx-auto mb-10">
@@ -65,8 +67,8 @@ export default function CareersPage3() {
 
       {/* Section 9: Safe place to work */}
       <section className=" flex px-6 md:px-16 py-12 bg-gray-50">
-        <div>
-          <h3 className="text-xl md:text-2xl font-bold mb-4">
+        <div className="w-1/2">
+          <h3 className="text-3xl md:text-3xl font-semibold mb-4">
             9. Safe place to work
           </h3>
           <p className="text-gray-700 mb-6">
@@ -90,17 +92,17 @@ export default function CareersPage3() {
         <div className="w-1/2">
           <Image
             src={career4}
-            width={0}
-            height={0}
+            width={700}
+            height={600}
             alt="Safe workplace 1"
-            className="rounded-lg shadow"
+            className=" shadow"
           />
         </div>
       </section>
 
       {/* Section 10: Honest Employer */}
       <section className="px-6 md:px-16 py-12 bg-white">
-        <h3 className="text-xl md:text-2xl font-bold mb-4">
+        <h3 className="text-3xl md:text-3xl font-semibold mb-4">
           10. Honest taxpayer & ethical employer
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
@@ -138,8 +140,11 @@ export default function CareersPage3() {
       </section>
 
       {/* Snapshot */}
-      <section className="px-6 md:px-16 py-12 bg-blue-100 text-center">
-        <h3 className="text-3xl md:text-3xl font-bold mb-10"> Gloedge snapshot</h3>
+      <section className="px-6 md:px-16 py-12 bg-purple-100 text-center">
+        <h3 className="text-3xl md:text-3xl font-semibold mb-10">
+          {" "}
+          Gloedge snapshot
+        </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-purple-700 font-bold text-2xl">
           <div>
             <p>100K+</p>

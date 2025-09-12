@@ -21,11 +21,11 @@ export default function CareersPage() {
 
         {/* Right side content */}
         <div className="md:w-1/2 w-full flex flex-col justify-center bg-purple-700 text-white p-8 rounded-lg md:rounded-l-none">
-          <h2 className="text-4xl md:text-3xl font-bold">Careers at Gloedge</h2>
-          <p className="mt-2 text-sm md:text-base">
+          <h2 className="text-4xl md:text-5xl font-bold">Careers at Gloedge</h2>
+          <p className="mt-2 text-xl md:text-base">
             Build a Rewarding Career Doing Meaningful Work
           </p>
-          <button className="mt-6 w-[400px] bg-white text-purple-700 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100">
+          <button className="mt-6 w-[400px] bg-white text-purple-700 font-semibold px-6 py-3 rounded shadow hover:bg-purple-300">
             Apply Now →
           </button>
         </div>

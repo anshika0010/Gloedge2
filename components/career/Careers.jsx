@@ -1,11 +1,12 @@
 import React from "react";
-
+import career5 from "../../images/career5.jpg";
+import Image from "next/image";
 export default function Careers() {
   return (
     <div className="w-full font-sans overflow-x-hidden">
       {/* Section 3: Growth Mindset */}
       <section className="px-6 md:px-16 py-12 bg-gray-50">
-        <h3 className="text-3xl md:text-3xl font-bold mb-4">
+        <h3 className="text-3xl md:text-3xl font-semibold mb-4">
           3. Growth Mindset- Not Yet
         </h3>
         <p className="text-purple-700 font-medium mb-4">
@@ -23,7 +24,9 @@ export default function Careers() {
 
       {/* Section 4: Earn More */}
       <section className="px-6 md:px-16 py-12 bg-white">
-        <h3 className="text-3xl md:text-3xl font-bold mb-4">4. Earn more</h3>
+        <h3 className="text-3xl md:text-3xl font-semibold mb-4">
+          4. Earn more
+        </h3>
         <p className="text-gray-700 mb-6">
           Know what? We share nearly 12% of our Gross Sales with our Teams
           instantly. That is nearly 25% of our profits. More than 46% of our
@@ -61,13 +64,13 @@ export default function Careers() {
 
       {/* Section 5: Learn & Grow */}
       <section className="px-6 md:px-16 py-12 bg-white">
-        <h3 className="text-3xl md:text-2xl font-bold mb-4">
-          5. Opportunities to learn & grow
+        <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+          5. Opportunities to Learn & Grow
         </h3>
         <p className="text-purple-700 font-medium mb-4">
           Life Long Learning | Great Training | Grow in Responsibilities
         </p>
-        <p className="text-gray-700 mb-8">
+        <p className="text-gray-700 mb-8 leading-relaxed">
           Our exceptional learning systems offer you the opportunity to
           continuously grow in knowledge and skills. We believe that each
           Y-Axian is a learner for a lifetime and reward those who apply these
@@ -80,24 +83,31 @@ export default function Careers() {
           {[
             {
               title: "Y-Manager's Track",
-              img: "https://www.y-axis.com/assets/cms/2023-10/Y-Manager.webp",
+              img:career5,
             },
             {
               title: "Y-Specialist Track",
-              img: "https://www.y-axis.com/assets/cms/2023-10/Y-Specia.webp",
+              img: career5,
             },
             {
               title: "Y-Global Track",
-              img: "https://via.placeholder.com/300x200",
+              img: career5,
             },
           ].map((card, idx) => (
             <div
               key={idx}
-              className="rounded-lg shadow overflow-hidden border border-gray-200"
+              className="rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition"
             >
-              <img src={card.img} alt={card.title} className="w-full" />
+              <div className="relative w-full h-48">
+                <Image
+                  src={card.img}
+                  alt={card.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="p-4">
-                <p className="font-medium">{card.title}</p>
+                <p className="font-medium text-gray-800">{card.title}</p>
               </div>
             </div>
           ))}
@@ -106,7 +116,7 @@ export default function Careers() {
 
       {/* Section 6: Cutting Edge Technology */}
       <section className="px-6 md:px-16 py-12 bg-gray-50">
-        <h3 className="text-3xl md:text-2xl font-bold mb-4">
+        <h3 className="text-3xl md:text-2xl font-semibold mb-4">
           6. Cutting edge technology
         </h3>
         <p className="text-gray-700 mb-6">
